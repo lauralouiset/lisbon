@@ -3,30 +3,54 @@ NEWSLETTER SIGN-UPS
 ============================================ */
 
 form{
-	margin: 0 auto;
+	margin: 20px auto 0;
+	text-align: center;
+	display:flex;
+	justify-content:center;
+	align-items: center;
 }
 
 input[type=submit]{
 	@extend .button;
 	border: none;
+	color: white;
+}
+input[type=email]{
+	width: 33%;
+	padding: 10px;
+	font-family: $paragraph;
+	font-size: 1.4rem;
 }
 
 /* ------------  NEWSLETTER 1  ------------ */
 
 #newsletter-1{
 	background-image: url(../assets/purple-pattern-bg.png);
-	background-position: fixed;
+	background-attachment: fixed;
+}
+
+.newsletter--text{
+		width: 80%;
+		margin: 14px auto;
 }
 
 .newsletter-1__input{
-	border: 2px solid white;
+	border: 1px solid white;
 	padding: 5px;
+	background-color: transparent;
+	color: white;
 }
 
+#newsletter-1__button{
+	border-radius: 0px 5px 5px 0px;
+}
 
 /* ------------  NEWSLETTER 2  ------------ */
 
 #newsletter-2{
 	background-image: url(../assets/white-pattern-bg.png);
-	background-position: fixed;
+	background-attachment: fixed;
+}
+.newsletter-2__input{
+	background-color: white
 }

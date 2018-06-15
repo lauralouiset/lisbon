@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600,800" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
 	<title>Lisbon - Responsive PSD Conversion</title>
 </head>
@@ -53,9 +53,9 @@
 
 	<section id="countdown">
 		<div class="countdown__container wrapper">
-			<div class="countdown__heading">
-				<p>26-29 August 2017, Berlin</p>
-				<h3 class="countdown__heading--main">
+			<div class="countdown__text">
+				<p class="countdown__date">26-29 August 2017, Berlin</p>
+				<h3 class="countdown__heading">
 					International Conference In 2017
 				</h3>
 			</div>
@@ -86,14 +86,14 @@
 					<p>Seconds</p>
 				</div>
 			</div>
-			<div class="buttons">
+			<div class="countdown__buttons">
 				<a href="#" class="button">Buy Tickets</a>
 				<a href="#" class="button">See Details</a>
 			</div>
 		</div>
 	</section>
 	<main>
-		<!-- ABOUT US -->
+		<!-- ABOUT THE EVENT -->
 		<section id="about">
 			<h2 class="section__heading">
 				About The Event
@@ -102,7 +102,7 @@
 			<div class="about__cards wrapper">
 				<div class="about__card shadow">
 					<img src="assets/about-image-1.png" alt="Computer monitors at live event">
-					<div>
+					<div class="about__card--text">
 						<h4 class="about__card--heading">Why are we doing this?</h4>
 						<p>It has survived not only five centuries but also the leap into electronic typesetting</p>
 						<a href="#" class="about--link">Read More</a>
@@ -110,8 +110,8 @@
 				</div>
 				
 				<div class="about__card shadow">
-					<img src="assets/about-image-2.png" alt="Computer monitors at live event">
-					<div>
+					<img src="assets/about-image-3.png" alt="Computer monitors at live event">
+					<div class="about__card--text">
 						<h4 class="about__card--heading">What will you learn?</h4>
 						<p>It has survived not only five centuries but also the leap into electronic typesetting</p>
 						<a href="#" class="about--link">Read More</a>
@@ -120,7 +120,7 @@
 
 				<div class="about__card shadow">
 					<img src="assets/about-image-3.png" alt="Computer monitors at live event">
-					<div>
+					<div class="about__card--text">
 						<h4 class="about__card--heading">What are the benefits?</h4>
 						<p>It has survived not only five centuries but also the leap into electronic typesetting</p>
 						<a href="#" class="about--link">Read More</a>
@@ -135,11 +135,11 @@
 		<section id="newsletter-1">
 			<div class="wrapper">
 				<h2 class="section__heading">Join Our Event</h2>
-				<p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aliquam, qui dolores doloribus cupiditate quia repellendus, voluptas molestia, explicabo dolor odio placeat quo eius ut consequuntur? Facere!</p>
+				<p class="newsletter--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aliquam, qui dolores doloribus cupiditate quia repellendus, voluptas molestia, explicabo dolor odio placeat quo eius ut consequuntur? Facere!</p>
 				<form action="">
 					<label for="email"></label>
 					<input class="newsletter-1__input"type="email" name="email" id="email" placeholder="Your Email...">
-					<input type="submit" class="button" value="Subscribe">
+					<input id="newsletter-1__button" type="submit" class="button" value="Subscribe">
 				</form>
 			</div>
 		</section>
@@ -154,9 +154,8 @@
 			<div class="speaker__cards wrapper">
 
 				<div class="speaker__card shadow">
-					<img src="assets/speaker-1.png" alt="">
-
-					<div class="speaker__card--socials">
+					<div class="speaker__image">
+						<img src="assets/speaker-1.png" alt="">
 							<ul class="speaker--socials">
 								<li>
 									<a class="speaker--social--icon" href="#">
@@ -184,30 +183,31 @@
 					</div>
 
 					<div class="speaker__card shadow">
-						<img src="assets/speaker-2.png" alt="">
-					
-						<div class="speaker__card--socials">
-							<ul class="speaker--socials">
-								<li><a class="speaker--social--icon" href="#"><i class="fab fa-google-plus-g"></i></a></li>
-								<li>
-									<a class="speaker--social--icon" href="#"><i class="fab fa-twitter"></i></a>
-								</li>
-								<li class="speaker--social--icon">
-									<a href="#"><i class="fab fa-facebook-f"></i></a>
-								</li>
-							</ul>
+						<div class="speaker__image">
+							<img src="assets/speaker-2.png" alt="">
+						
+								<ul class="speaker--socials">
+									<li><a class="" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+									<li>
+										<a class="speaker--social--icon" href="#"><i class="fab fa-twitter"></i></a>
+									</li>
+									<li class="speaker--social--icon">
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+									</li>
+								</ul>
+						</div>
+
 						</div>
 
 							<div class="speaker__card--bio">
 								<p class="speaker--bio--name">Seth Rollins</p>
-								<p class="speaker--bio--title">GM, The Boxtra[</p>
+								<p class="speaker--bio--title">GM, The Boxtrap</p>
 							</div>
 					</div>
 
 					<div class="speaker__card shadow">
-						<img src="assets/speaker-3.png" alt="">
-					
-						<div class="speaker__card--socials">
+						<div class="speaker__image">
+							<img src="assets/speaker-3.png" alt="">
 							<ul class="speaker--socials">
 								<li>
 									<a class="speaker--social--icon" href="#">
@@ -226,6 +226,7 @@
 								</li>
 							</ul>
 						</div>
+
 						<div class="speaker__card--bio">
 							<p class="speaker--bio--name">Darcy Owens</p>
 							<p class="speaker--bio--title">Producer, CSI:Cyber</p>
@@ -278,48 +279,50 @@
 
 				<div class="pricing__card">
 					<h4 class="pricing__title">Basic Plan</h4>
-					<h5 class="pricing__subtitle">Standard Pricing Plan</h5>
-					<p class="pricing__price"><span class="dollarsign">$</span> <span class="price">35</span> / monthly</p>
+					<p class="pricing__subtitle">Standard Pricing Plan</p>
+					<p class="pricing__price"><span class="dollarsign">$</span> 
+						<span class="price">35</span> / monthly</p>
 					<ul class="pricing__details">
 						<li>Clients Support 3 Event</li>
-						<li>Regular Seat &amp; Accomodationg</li>
+						<li>Regular Seat &amp; Accomodation</li>
 						<li>Free Coffee &amp; Lunch</li>
-						<li>Free Engtrance Materials</li>
+						<li>Free Entrance Materials</li>
 					</ul>
-					<a href="#" class="button">See Details</a>
+					<a href="#" class="pricing__button button">See Details</a>
 				</div>
 
 
 				<div class="pricing__card">
 					<div class="bestplan">Best Choice</div>
 					<h4 class="pricing__title">Optimal Plan</h4>
-					<h5 class="pricing__subtitle">Standard Pricing Plan</h5>
-					<p class="pricing__price">$
-						<span class="price"><span class="dollarsign">$</span>60</span> / monthly</p>
+					<p class="pricing__subtitle">Standard Pricing Plan</p>
+					<p class="pricing__price">
+						<span class="dollarsign">$</span>
+						<span class="price">60</span> / monthly</p>
 					<ul class="pricing__details">
 						<li>Clients Support 3 Event</li>
-						<li>Regular Seat &amp; Accomodationg</li>
+						<li>Regular Seat &amp; Accomodation</li>
 						<li>Free Coffee &amp; Lunch</li>
-						<li>Free Engtrance Materials</li>
+						<li>Free Entrance Materials</li>
 					</ul>
-					<a href="#" class="button">See Details</a>
+					<a href="#" class="pricing__button button">See Details</a>
 				</div>
 
 
 
 				<div class="pricing__card">
 					<h4 class="pricing__title">Premium Plan</h4>
-					<h5 class="pricing__subtitle">Standard Pricing Plan</h5>
-					<p class="pricing__price">$
-						<span class="price">
-							<span class="dollarsign">$</span>90</span> / monthly</p>
+					<p class="pricing__subtitle">Standard Pricing Plan</p>
+					<p class="pricing__price">
+						<span class="dollarsign">$</span>
+						<span class="price">90</span> / monthly</p>
 					<ul class="pricing__details">
 						<li>Clients Support 3 Event</li>
-						<li>Regular Seat &amp; Accomodationg</li>
+						<li>Regular Seat &amp; Accomodation</li>
 						<li>Free Coffee &amp; Lunch</li>
-						<li>Free Engtrance Materials</li>
+						<li>Free Entrance Materials</li>
 					</ul>
-					<a href="#" class="button">See Details</a>
+					<a href="#" class="pricing__button button">See Details</a>
 				</div>
 
 			</div>
@@ -470,11 +473,11 @@
 		<!-- NEWSLETTER SIGNUP 2 -->
 
 		<section id="newsletter-2">
-			<h3 class="newsletter1__heading">Sign Up For Our Newsletter</h3>
+			<h3 class="newsletter-2__heading">Sign Up For Our Newsletter</h3>
 			<form action="">
 				<label for="email"></label>
 				<input type="email" id="email" name="email" placeholder="Your email address..">
-				<input type="submit" value="Subscribe">
+				<input class="newsletter-2__input"type="submit" value="Subscribe">
 			</form>
 		</section>
 
@@ -483,7 +486,7 @@
 		<div class="footer__top">
 			<div class="footer__contact wrapper">
 
-			<div class="address">
+			<div class="contact__item">
 				<div class="contact--icon">
 					<i class="fas fa-map-marker-alt"></i>
 				</div>
@@ -493,7 +496,7 @@
 				</div>
 			</div>
 
-			<div class="phone">
+			<div class="contact__item">
 				<div class="contact--icon">
 					<i class="fas fa-mobile-alt"></i>
 				</div>
@@ -503,7 +506,7 @@
 				</div>
 			</div>
 
-			<div class="email">
+			<div class="contact__item">
 				<div class="contact--icon">
 					<i class="far fa-envelope"></i>
 				</div>

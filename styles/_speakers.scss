@@ -9,12 +9,17 @@ SPEAKERS
 .speaker__card{
 	width: calc(25% - 20px);
 	margin: 20px;
-	position: relative;
 }
 
+.speaker__image{
+	position: relative;
+	overflow: hidden;
+}
 
-.speaker__card--socials{
+.speaker--social--icon{
 	position: absolute;
+	top: -40px;
+
 }
 
 .speaker--socials{
@@ -29,4 +34,5 @@ SPEAKERS
 
 .speaker__card--bio{
 	text-align: center;
+		padding: 20px;
 }

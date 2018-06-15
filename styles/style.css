@@ -148,9 +148,12 @@ ul {
   list-style: none; }
 
 .wrapper {
-  width: 80%;
+  width: 75%;
   min-width: 900px;
   margin: 0 auto; }
+
+section {
+  padding: 30px 0 50px; }
 
 /* =========================================
 VARIABLES & MIXINS
@@ -163,40 +166,61 @@ TYPOGRAPHY
 a {
   color: inherit;
   text-decoration: none; }
-  a:visited {
-    color: inherit; }
   a:hover {
-    color: #e85889; }
+    color: #ed1e79; }
 
 h1 {
   font-family: "Raleway", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 4.4rem; }
 
 p {
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6; }
 
 .section__heading {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700; }
+  font-weight: 800;
+  font-size: 3.6rem; }
 
 .section__subheading {
   font-style: italic;
   font-family: "Poppins", sans-serif;
-  text-align: center; }
+  text-align: center;
+  color: #777777; }
 
 /* ------------  HEADER  ------------ */
 #header {
   color: white; }
 
-.header__nav li a, .footer__nav li a {
+.header__nav li, .footer__nav li {
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem; }
 
 .title__date {
   font-style: italic;
-  text-align: center; }
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: white; }
+
+.countdown__heading,
+.countdown__date {
+  font-family: "Raleway", sans-serif;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1.5; }
+
+.countdown__heading {
+  font-size: 2.4rem;
+  margin: 10px 0; }
+
+.countdown__date {
+  font-size: 1.4rem; }
 
 /* ------------  ABOUT  ------------ */
 .about__card {
@@ -204,29 +228,78 @@ p {
 
 .about__card--heading {
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem; }
 
 .about--link {
-  color: #e85889;
-  font-style: italic; }
+  color: #ed1e79;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem; }
   .about--link:hover {
     color: #463f8c; }
 
 /* ------------  NEWSLETTERS  ------------ */
 #newsletter-1 {
+  color: white;
+  text-align: center; }
+
+.newsletter--text {
   color: white; }
 
-#newsletter-2 {
-  color: black; }
+.newsletter-2__heading {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: black;
+  font-family: "Raleway", sans-serif; }
 
 /* ------------  SPEAKERS  ------------ */
+.speaker__card--bio {
+  color: #777777; }
+
 /* ------------  PRICING  ------------ */
 #pricing {
   color: white; }
+  #pricing .section__subheading {
+    color: white; }
 
 .pricing__card {
   color: black;
   text-align: center; }
+
+.pricing__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-top: 0; }
+
+.pricing__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  color: #777777; }
+
+.pricing__price {
+  font-family: "Poppins", sans-serif;
+  color: #777777; }
+
+.dollarsign {
+  position: relative;
+  top: -10px; }
+
+.price {
+  color: black;
+  font-size: 2.4rem; }
+
+.pricing__details li {
+  border-bottom: 1px dashed #777777;
+  color: #777777;
+  font-size: 1.4rem;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #777777; }
+
+.pricing__details li:last-child {
+  border-bottom: none; }
 
 /* ------------  SCHEDULE  ------------ */
 /* ------------  QUOTES  ------------ */
@@ -236,35 +309,80 @@ p {
 /* ------------  NEWS  ------------ */
 /* ------------  FOOTER  ------------ */
 .footer__contact {
-  color: #fafafa; }
+  color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.contact__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 20px;
+  margin: 0 20px; }
+
+.contact__item:last-child {
+  border: none; }
+
+.contact--icon {
+  font-size: 1.6rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 0 10px; }
 
 .footer__menu {
   color: white; }
 
 .fakelink {
-  color: #e85889; }
+  color: #ed1e79; }
+
+.footer__nav {
+  color: #777777; }
 
 /* =========================================
 UTILITIES
 ============================================ */
 .shadow {
-  -webkit-box-shadow: 4px 4px 4px #fafafa;
-  box-shadow: 4px 4px 4px #fafafa; }
+  -webkit-box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+  box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03); }
+
+.countdown__buttons {
+  color: white; }
 
 .button, input[type=submit] {
   color: white;
-  border-radius: 10px;
-  background-color: #e85889;
+  border-radius: 5px;
+  min-width: 214px;
+  background-color: #ed1e79;
   padding: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600; }
 
 .section__subheading::after {
   content: "";
   width: 10px;
   height: 1px;
-  color: #e85889;
+  color: #ed1e79;
   margin: 10px auto; }
 
 /* =========================================
@@ -272,7 +390,8 @@ HEADER
 ============================================ */
 header {
   background-image: url("../assets/main-image.png");
-  height: calc(100vh - 50px); }
+  background-size: cover;
+  height: 100vh; }
 
 .header__top {
   display: -webkit-box;
@@ -281,7 +400,8 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 3px double #fafafa; }
+  border-bottom: 2px double #777777;
+  padding: 5px; }
 
 .header__nav, .footer__nav {
   display: -webkit-box;
@@ -298,9 +418,9 @@ header {
   display: none; }
 
 .search {
-  background-color: #e85889;
+  background-color: #ed1e79;
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px;
   display: block; }
 
 .header__main {
@@ -315,15 +435,15 @@ header {
   align-items: center; }
 
 .header__inner {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   text-align: center; }
   .header__inner img {
     margin: 0 auto; }
 
 .arrow {
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 10px 5px; }
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 25px 10px; }
 
 /* ------------  COUNTDOWN  ------------ */
 #countdown {
@@ -336,7 +456,10 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 20px; }
+  padding: 20px 0; }
+
+.countdown__text {
+  margin: 10px 0; }
 
 .countdown__clock {
   display: -webkit-box;
@@ -351,8 +474,11 @@ header {
   display: inline-block;
   border-radius: 5px;
   background-color: #1b1b1b;
-  padding: 5px;
-  margin: 5px; }
+  padding: 10px;
+  margin: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem; }
 
 /* =========================================
 ABOUT
@@ -368,6 +494,9 @@ ABOUT
   margin: 20px; }
   .about__card img {
     width: 100%; }
+
+.about__card--text {
+  padding: 10px; }
 
 /* =========================================
 EVENTS SCHEDULE
@@ -385,11 +514,15 @@ SPEAKERS
 
 .speaker__card {
   width: calc(25% - 20px);
-  margin: 20px;
-  position: relative; }
+  margin: 20px; }
 
-.speaker__card--socials {
-  position: absolute; }
+.speaker__image {
+  position: relative;
+  overflow: hidden; }
+
+.speaker--social--icon {
+  position: absolute;
+  top: -40px; }
 
 .speaker--socials {
   color: white;
@@ -402,7 +535,8 @@ SPEAKERS
   color: white; }
 
 .speaker__card--bio {
-  text-align: center; }
+  text-align: center;
+  padding: 20px; }
 
 /* =========================================
 OUR PRICING
@@ -416,7 +550,7 @@ OUR PRICING
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px;
+  padding: 30px;
   background-color: white; }
 
 .pricing__card {
@@ -424,13 +558,29 @@ OUR PRICING
   position: relative;
   background-color: #fafafa;
   width: calc(33.33% - 20px);
-  margin: 20px; }
+  margin-right: 30px;
+  border: 1px solid #ececec;
+  padding: 50px 30px; }
+
+.pricing__card:last-child {
+  margin-right: 0; }
 
 .bestplan {
   position: absolute;
   background: #463f8c;
   color: white;
-  display: block; }
+  display: block;
+  font-family: "Raleway", sans-serif;
+  padding: 7px 50px;
+  font-size: 1.4rem;
+  right: -50px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 25px; }
+
+.pricing__details {
+  margin-bottom: 30px; }
 
 /* =========================================
 QUOTES SECTION
@@ -445,24 +595,53 @@ NEWS
 NEWSLETTER SIGN-UPS
 ============================================ */
 form {
-  margin: 0 auto; }
+  margin: 20px auto 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 input[type=submit] {
-  border: none; }
+  border: none;
+  color: white; }
+
+input[type=email] {
+  width: 33%;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem; }
 
 /* ------------  NEWSLETTER 1  ------------ */
 #newsletter-1 {
   background-image: url(../assets/purple-pattern-bg.png);
-  background-position: fixed; }
+  background-attachment: fixed; }
+
+.newsletter--text {
+  width: 80%;
+  margin: 14px auto; }
 
 .newsletter-1__input {
-  border: 2px solid white;
-  padding: 5px; }
+  border: 1px solid white;
+  padding: 5px;
+  background-color: transparent;
+  color: white; }
+
+#newsletter-1__button {
+  border-radius: 0px 5px 5px 0px; }
 
 /* ------------  NEWSLETTER 2  ------------ */
 #newsletter-2 {
   background-image: url(../assets/white-pattern-bg.png);
-  background-position: fixed; }
+  background-attachment: fixed; }
+
+.newsletter-2__input {
+  background-color: white; }
 
 /* =========================================
 FOOTER
@@ -471,7 +650,8 @@ footer {
   background-color: black; }
 
 .footer__top {
-  background-color: #1b1b1b; }
+  background-color: #1b1b1b;
+  padding: 20px; }
 
 .footer__contact {
   display: -webkit-box;

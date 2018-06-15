@@ -3,17 +3,24 @@ UTILITIES
 ============================================ */
 
 .shadow{
-	box-shadow: 4px 4px 4px $grey;
+	box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+}
+
+.countdown__buttons{
+	color: white;
 }
 
 .button{
 	color: white;
-	border-radius: 10px;
+	border-radius: 5px;
+	min-width: 214px;
 	background-color: $pink;
 	padding: 10px;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: $heading;
+	font-size: 1.6rem;
+	font-weight: 600;
 }
 
 .section__subheading::after{

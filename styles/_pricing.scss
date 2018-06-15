@@ -10,7 +10,7 @@ OUR PRICING
 
 .pricing__container{
 	display:flex;
-	padding: 10px;
+	padding: 30px;
 	background-color: white;
 }
 
@@ -19,14 +19,33 @@ OUR PRICING
 	position: relative;
 	background-color: $grey;
 	width: calc(33.33% - 20px);
-	margin: 20px;
-
+	margin-right: 30px;
+	border: 1px solid #ececec;
+	padding: 50px 30px;
 }
 
+.pricing__card:last-child{
+	margin-right: 0;
+
+}
 
 .bestplan{
 position: absolute;
 background: $purple;
 color: white;
 display: block;
+font-family: $heading;
+padding: 7px 50px;
+font-size: 1.4rem;
+right: -50px;
+transform: rotate(45deg);
+top: 25px;
+}
+
+// .pricing__button{
+// 	margin-top: 20px;
+// }
+
+.pricing__details{
+	margin-bottom: 30px;
 }

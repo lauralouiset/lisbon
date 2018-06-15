@@ -4,14 +4,15 @@ HEADER
 
 header{
 	background-image: url("../assets/main-image.png");
-	height: calc(100vh - 50px);
+	background-size: cover;
+	height: 100vh;
 }
 
 .header__top{
 	display: flex;
 	align-items: center;
-	border-bottom: 3px double $grey;
-
+	border-bottom: 2px double $medgrey;
+	padding: 5px;
 }
 
 .header__nav{
@@ -33,7 +34,7 @@ header{
 .search{
 	background-color: $pink;
 	border-radius: 50%;
-	padding: 5px;
+	padding: 8px;
 	display: block;
 }
 
@@ -44,8 +45,8 @@ header{
 }
 
 .header__inner{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 10%;
+	margin-bottom: 10%;
 	text-align: center;
 
 	img {
@@ -54,8 +55,8 @@ header{
 }
 
 .arrow{
-background-color: rgba(255, 255, 255, 0.4);
-padding: 10px 5px;
+background-color: rgba(255, 255, 255, 0.3);
+padding: 25px 10px;
 }
 
 
@@ -70,8 +71,13 @@ padding: 10px 5px;
 .countdown__container{
 	display: flex;
 	align-items: center;
-	padding: 20px;
+	padding: 20px 0;;
 }
+
+.countdown__text{
+margin: 10px 0;
+}
+
 
 .countdown__clock{
 	display: flex;
@@ -86,8 +92,11 @@ padding: 10px 5px;
 		display: inline-block;
 		border-radius: 5px;
 		background-color: $darkgrey;
-		padding: 5px;
+		padding: 10px;
 		margin: 5px;
+		font-family: $paragraph;
+		font-weight: 600;
+		font-size: 1.6rem;
 
 	}
 }
