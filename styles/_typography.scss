@@ -2,8 +2,9 @@
 TYPOGRAPHY
 ============================================ */
 
-$heading: 'Poppins', sans-serif;
-$paragraph: 'Raleway', sans-serif;
+$heading: 'Raleway', sans-serif;
+$paragraph: 'Poppins', sans-serif;
+
 
 
 a{
@@ -19,7 +20,27 @@ a{
 
 h1{
 	font-family: $heading;
+	text-transform: uppercase;
 }
+
+
+p{
+	font-family: $paragraph;
+}
+
+.section__heading{
+	font-family: $heading;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 700;
+}
+
+.section__subheading{
+	font-style: italic;
+	font-family: $paragraph;
+	text-align: center;
+}
+
 
 /* ------------  HEADER  ------------ */
 
@@ -29,11 +50,31 @@ h1{
 
 .header__nav li a{
 	text-transform: uppercase;
+	font-family: $heading;
 	
+}
+
+.title__date{
+	font-style: italic;
+	text-align: center;
 }
 
 /* ------------  ABOUT  ------------ */
 
+.about__card{
+	text-align: left;
+}
+.about__card--heading{
+	text-transform: uppercase;
+	font-family: $heading;
+}
+
+.about--link{
+	color: $pink;
+	font-style: italic;
+	&:hover{ color: $purple;
+	}
+}
 
 /* ------------  NEWSLETTERS  ------------ */
 
@@ -41,10 +82,23 @@ h1{
 	color: $white;
 }
 
+#newsletter-2{
+	color: $black;
+}
+
 /* ------------  SPEAKERS  ------------ */
 
 
 /* ------------  PRICING  ------------ */
+
+#pricing{
+	color: white;
+}
+
+.pricing__card{
+	color: black;
+	text-align: center;
+}
 
 
 /* ------------  SCHEDULE  ------------ */
@@ -61,6 +115,18 @@ h1{
 
 /* ------------  FOOTER  ------------ */
 
+.footer__contact{
+	color: $grey;
+}
+
+.footer__menu{
+	color: white;
+}
+
 .fakelink{
 	color: $pink;
+}
+
+.footer__nav{
+	
 }

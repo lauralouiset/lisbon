@@ -1,0 +1,32 @@
+/* =========================================
+OUR PRICING
+============================================ */
+
+#pricing{
+	background-image: url(../assets/pricing-image.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.pricing__container{
+	display:flex;
+	padding: 10px;
+	background-color: white;
+}
+
+.pricing__card{
+	overflow: hidden;
+	position: relative;
+	background-color: $grey;
+	width: calc(33.33% - 20px);
+	margin: 20px;
+
+}
+
+
+.bestplan{
+position: absolute;
+background: $purple;
+color: white;
+display: block;
+}

@@ -1,0 +1,93 @@
+/* =========================================
+HEADER
+============================================ */
+
+header{
+	background-image: url("../assets/main-image.png");
+	height: calc(100vh - 50px);
+}
+
+.header__top{
+	display: flex;
+	align-items: center;
+	border-bottom: 3px double $grey;
+
+}
+
+.header__nav{
+	display: flex;
+  li a{
+		padding: 5px;
+		margin: 5px;
+	}
+}
+
+.header__logo{
+	margin-right: auto;
+}
+
+.hamburger{
+	display: none;
+}
+
+.search{
+	background-color: $pink;
+	border-radius: 50%;
+	padding: 5px;
+	display: block;
+}
+
+.header__main{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__inner{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+
+	img {
+		margin: 0 auto;
+	}
+}
+
+.arrow{
+background-color: rgba(255, 255, 255, 0.4);
+padding: 10px 5px;
+}
+
+
+/* ------------  COUNTDOWN  ------------ */
+
+
+
+#countdown{
+	background-color: $grey;
+}
+
+.countdown__container{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.countdown__clock{
+	display: flex;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds{
+	div{
+		color: white;
+		display: inline-block;
+		border-radius: 5px;
+		background-color: $darkgrey;
+		padding: 5px;
+		margin: 5px;
+
+	}
+}

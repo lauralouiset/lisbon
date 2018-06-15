@@ -1,0 +1,17 @@
+/* =========================================
+ABOUT
+============================================ */
+
+.about__cards{
+	display: flex;
+	margin: 0 auto;
+}
+
+.about__card{
+	width: calc(33.33% - 20px);
+	margin: 20px;
+
+	img{
+		width: 100%;
+	}
+}

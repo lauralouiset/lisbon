@@ -1,0 +1,32 @@
+/* =========================================
+SPEAKERS 
+============================================ */
+
+.speaker__cards{
+	display: flex;
+}
+
+.speaker__card{
+	width: calc(25% - 20px);
+	margin: 20px;
+	position: relative;
+}
+
+
+.speaker__card--socials{
+	position: absolute;
+}
+
+.speaker--socials{
+		color: white;
+		display: flex;
+}
+
+.speaker__card:hover .speaker__card--bio{
+	background-color: $purple;
+	color: white;
+}
+
+.speaker__card--bio{
+	text-align: center;
+}

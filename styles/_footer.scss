@@ -1,0 +1,26 @@
+/* =========================================
+FOOTER
+============================================ */
+footer{
+	background-color: $black;
+}
+
+.footer__top{
+	background-color: $darkgrey;
+}
+
+.footer__contact{
+	display: flex;
+}
+
+.footer__menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__nav{
+	@extend .header__nav
+
+}

@@ -1,0 +1,25 @@
+/* =========================================
+UTILITIES
+============================================ */
+
+.shadow{
+	box-shadow: 4px 4px 4px $grey;
+}
+
+.button{
+	color: white;
+	border-radius: 10px;
+	background-color: $pink;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $heading;
+}
+
+.section__subheading::after{
+	content:"";
+	width: 10px;
+	height: 1px;
+	color: $pink;
+	margin: 10px auto;
+}

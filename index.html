@@ -12,7 +12,7 @@
 		
 	<header id="header">
 
-			<nav class="top-header">
+			<nav class="header__top wrapper">
 					<img class="header__logo" src="assets/logo.png" alt="Lisbon logo">
 					<ul class="header__nav">
 						<li><a href="#">Home</a></li>
@@ -34,9 +34,9 @@
 				<div class="arrow arrow--left">
 					<i class="fas fa-chevron-left"></i>
 				</div>
-				<div class="header_inner">
+				<div class="header__inner">
 				<img src="assets/mic-icon.png" alt="Microphone icon">
-				<h4>20 - 22 June, 2018, New York City</h4>
+				<p class="title__date">20 - 22 June, 2018, New York City</p>
 				<h1>World Digital Conference 2018 <br/>
 						Lead To Your Career
 				</h1>
@@ -99,8 +99,8 @@
 				About The Event
 			</h2>
 			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
-			<div class="about__cards">
-				<div class="about__card">
+			<div class="about__cards wrapper">
+				<div class="about__card shadow">
 					<img src="assets/about-image-1.png" alt="Computer monitors at live event">
 					<div>
 						<h4 class="about__card--heading">Why are we doing this?</h4>
@@ -109,8 +109,8 @@
 					</div>
 				</div>
 				
-				<div class="about__card">
-					<img src="assets/about-image-1.png" alt="Computer monitors at live event">
+				<div class="about__card shadow">
+					<img src="assets/about-image-2.png" alt="Computer monitors at live event">
 					<div>
 						<h4 class="about__card--heading">What will you learn?</h4>
 						<p>It has survived not only five centuries but also the leap into electronic typesetting</p>
@@ -118,8 +118,8 @@
 					</div>
 				</div>
 
-				<div class="about__card">
-					<img src="assets/about-image-1.png" alt="Computer monitors at live event">
+				<div class="about__card shadow">
+					<img src="assets/about-image-3.png" alt="Computer monitors at live event">
 					<div>
 						<h4 class="about__card--heading">What are the benefits?</h4>
 						<p>It has survived not only five centuries but also the leap into electronic typesetting</p>
@@ -132,14 +132,16 @@
 
 		<!-- NEWSLETTER SIGNUP 1 -->
 
-		<section class="newsletter-1">
-			<h2 class="section__heading white">Join Our Event</h2>
-			<p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aliquam, qui dolores doloribus cupiditate quia repellendus, voluptas molestia, explicabo dolor odio placeat quo eius ut consequuntur? Facere!</p>
-			<form action="">
-				<label for="email"></label>
-				<input type="email" name="email" id="email" placeholder="Your Email...">
-				<input type="submit" class="button" value="Subscribe">
-			</form>
+		<section id="newsletter-1">
+			<div class="wrapper">
+				<h2 class="section__heading">Join Our Event</h2>
+				<p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aliquam, qui dolores doloribus cupiditate quia repellendus, voluptas molestia, explicabo dolor odio placeat quo eius ut consequuntur? Facere!</p>
+				<form action="">
+					<label for="email"></label>
+					<input class="newsletter-1__input"type="email" name="email" id="email" placeholder="Your Email...">
+					<input type="submit" class="button" value="Subscribe">
+				</form>
+			</div>
 		</section>
 
 			<!-- SPEAKERS -->
@@ -148,21 +150,30 @@
 				About Our Speakers
 			</h2>
 			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
-			<div class="speaker__cards">
 
-				<div class="speaker__card">
+			<div class="speaker__cards wrapper">
+
+				<div class="speaker__card shadow">
 					<img src="assets/speaker-1.png" alt="">
 
 					<div class="speaker__card--socials">
-						<div class="gplus">
-							<i class="fab fa-google-plus-g"></i>
-						</div>
-						<div class="twitter">
-							<i class="fab fa-twitter"></i>
-						</div>
-						<div class="facebook">
-							<i class="fab fa-facebook-f"></i>
-						</div>
+							<ul class="speaker--socials">
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li>
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+							</ul>
 					</div>
 
 						<div class="speaker__card--bio">
@@ -172,19 +183,19 @@
 
 					</div>
 
-					<div class="speaker__card">
+					<div class="speaker__card shadow">
 						<img src="assets/speaker-2.png" alt="">
 					
 						<div class="speaker__card--socials">
-							<div class="gplus">
-								<i class="fab fa-google-plus-g"></i>
-							</div>
-							<div class="twitter">
-								<i class="fab fa-twitter"></i>
-							</div>
-							<div class="facebook">
-								<i class="fab fa-facebook-f"></i>
-							</div>
+							<ul class="speaker--socials">
+								<li><a class="speaker--social--icon" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+								<li>
+									<a class="speaker--social--icon" href="#"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="speaker--social--icon">
+									<a href="#"><i class="fab fa-facebook-f"></i></a>
+								</li>
+							</ul>
 						</div>
 
 							<div class="speaker__card--bio">
@@ -193,19 +204,27 @@
 							</div>
 					</div>
 
-					<div class="speaker__card">
+					<div class="speaker__card shadow">
 						<img src="assets/speaker-3.png" alt="">
 					
 						<div class="speaker__card--socials">
-							<div class="gplus">
-								<i class="fab fa-google-plus-g"></i>
-							</div>
-							<div class="twitter">
-								<i class="fab fa-twitter"></i>
-							</div>
-							<div class="facebook">
-								<i class="fab fa-facebook-f"></i>
-							</div>
+							<ul class="speaker--socials">
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li>
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+							</ul>
 						</div>
 						<div class="speaker__card--bio">
 							<p class="speaker--bio--name">Darcy Owens</p>
@@ -213,19 +232,27 @@
 						</div>
 					</div>
 		
-					<div class="speaker__card">
-						<img src="assets/speaker-1.png" alt="">
+					<div class="speaker__card shadow">
+						<img src="assets/speaker-4.png" alt="">
 					
 						<div class="speaker__card--socials">
-							<div class="gplus">
-								<i class="fab fa-google-plus-g"></i>
-							</div>
-							<div class="twitter">
-								<i class="fab fa-twitter"></i>
-							</div>
-							<div class="facebook">
-								<i class="fab fa-facebook-f"></i>
-							</div>
+							<ul class="speaker--socials">
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li>
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li class="speaker--social--icon">
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+							</ul>
 						</div>
 							<div class="speaker__card--bio">
 								<p class="speaker--bio--name">Ashley Warner</p>
@@ -243,11 +270,12 @@
 		<!-- PRICING -->
 		<section id="pricing">
 			<h2 class="section__heading">
-				About Our Speakers
+				Our Pricing
 			</h2>
 			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
 
-			<div class="pricing__container">
+			<div class="pricing__container shadow wrapper">
+
 				<div class="pricing__card">
 					<h4 class="pricing__title">Basic Plan</h4>
 					<h5 class="pricing__subtitle">Standard Pricing Plan</h5>
@@ -260,9 +288,8 @@
 					</ul>
 					<a href="#" class="button">See Details</a>
 				</div>
-			</div>
 
-			<div class="pricing__container">
+
 				<div class="pricing__card">
 					<div class="bestplan">Best Choice</div>
 					<h4 class="pricing__title">Optimal Plan</h4>
@@ -277,9 +304,9 @@
 					</ul>
 					<a href="#" class="button">See Details</a>
 				</div>
-			</div>
 
-			<div class="pricing__container">
+
+
 				<div class="pricing__card">
 					<h4 class="pricing__title">Premium Plan</h4>
 					<h5 class="pricing__subtitle">Standard Pricing Plan</h5>
@@ -294,14 +321,16 @@
 					</ul>
 					<a href="#" class="button">See Details</a>
 				</div>
+
 			</div>
+
 		</section>
 
 		<!-- EVENT SCHEDULE -->
 
 		<section id="schedule">
 			<h2 class="section__heading">
-				Latest News
+				Event Schedule
 			</h2>
 			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
 
@@ -336,7 +365,7 @@
 					<div class="speaker speaker1">
 
 						<div class="speaker__image-container">
-							<img src="assets/speaker-1.png" alt="Speaker 1 headshot">
+							<img src="assets/quote-1.png" alt="Speaker 1 headshot">
 						</div>
 
 						<div class="speaker__text">
@@ -350,7 +379,7 @@
 				<div class="speaker speaker2">
 				
 					<div class="speaker__image-container">
-						<img src="assets/speaker-2.png" alt="Speaker 2 headshot">
+						<img src="assets/quote-2.png" alt="Speaker 2 headshot">
 					</div>
 				
 					<div class="speaker__text">
@@ -367,7 +396,7 @@
 				<div class="speaker speaker3">
 				
 					<div class="speaker__image-container">
-						<img src="assets/speaker-3.png" alt="Speaker 3 headshot">
+						<img src="assets/quote-3.png" alt="Speaker 3 headshot">
 					</div>
 				
 					<div class="speaker__text">
@@ -391,19 +420,19 @@
 
 		<section id="quotes">
 
-			<div class="quotes">
+			<div class="quotes wrapper">
 				<aside class="quotes__images">
 					<div class="quote__image--container">
-						<img src="assets/speaker-1.png" alt="Ashley Warner headshot">
+						<img src="assets/quote-1.png" alt="Ashley Warner headshot">
 					</div>
 					<div class="quote__image--container">
-						<img src="assets/speaker-2.png" alt="Ashley Warner headshot">
+						<img src="assets/quote-2.png" alt="Ashley Warner headshot">
 					</div>
 					<div class="quote__image--container">
-						<img src="assets/speaker-3.png" alt="Ashley Warner headshot">
+						<img src="assets/quote-3.png" alt="Ashley Warner headshot">
 					</div>
 					<div class="quote__image--container">
-						<img src="assets/speaker-4.png" alt="Ashley Warner headshot">
+						<img src="assets/quote-4.png" alt="Ashley Warner headshot">
 					</div>
 				</aside>
 					<div class="quote__icon"><p class="quote__quoteicon">“</p></div>
@@ -422,11 +451,11 @@
 
 		<section id="news">
 			<h2 class="section__heading">
-				About Our Speakers
+				Latest News
 			</h2>
 			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
 
-			<div class="news__mosaic">
+			<div class="news__mosaic wrapper">
 				<div class="news__image1">
 					<img src="assets/news-1.png" alt="Gathering at Lisbon event">
 				</div>
@@ -451,7 +480,8 @@
 
 	<!-- FOOTER -->
 	<footer>
-		<div class="footer__contact">
+		<div class="footer__top">
+			<div class="footer__contact wrapper">
 
 			<div class="address">
 				<div class="contact--icon">
@@ -463,7 +493,7 @@
 				</div>
 			</div>
 
-			<div class="address">
+			<div class="phone">
 				<div class="contact--icon">
 					<i class="fas fa-mobile-alt"></i>
 				</div>
@@ -473,7 +503,7 @@
 				</div>
 			</div>
 
-			<div class="address">
+			<div class="email">
 				<div class="contact--icon">
 					<i class="far fa-envelope"></i>
 				</div>
@@ -483,21 +513,20 @@
 				</div>
 			</div>
 
+			</div>
 		</div>
 
 		<div class="footer__menu">
 			<img src="assets/logo.png" alt="Lisbon logo">
 			<ul class="footer__nav">
 				<li><a href="#">Home</a></li>
-				<li><a href="#about">About Us</a></li>
 				<li>
 					<a href="#speakers">Speakers</a>
 				</li>
-				<li><a href="#pages">Pages</a></li>
 				<li><a href="#sponsors">Sponsors</a></li>
 				<li><a href="#blog">Blog</a></li>
 				<li><a href="#venues">Venues</a></li>
-				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 			<p>Copyright &copy; <span class="fakelink">Lisbon</span> 2017</p>
 			<p>Responsive Template Conversion by <a class="fakelink" href="https://lauraloui.se">Laura-Louise</a> 2018</p>

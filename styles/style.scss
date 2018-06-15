@@ -11,13 +11,16 @@ hello@lauraloui.se
 
 @import 'var-mix';
 @import 'typography';
+@import 'utils';
 
-@import 'components/header';
-@import 'components/about';
-@import 'components/schedule';
-@import 'comonents/quotes';
-@import 'components/news';
-@import 'components/newsletters';
-@import 'components/footer';
+@import 'header';
+@import 'about';
+@import 'schedule';
+@import 'speakers';
+@import 'pricing';
+@import 'quotes';
+@import 'news';
+@import 'newsletters';
+@import 'footer';
 
 

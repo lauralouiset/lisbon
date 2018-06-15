@@ -1,0 +1,32 @@
+/* =========================================
+NEWSLETTER SIGN-UPS
+============================================ */
+
+form{
+	margin: 0 auto;
+}
+
+input[type=submit]{
+	@extend .button;
+	border: none;
+}
+
+/* ------------  NEWSLETTER 1  ------------ */
+
+#newsletter-1{
+	background-image: url(../assets/purple-pattern-bg.png);
+	background-position: fixed;
+}
+
+.newsletter-1__input{
+	border: 2px solid white;
+	padding: 5px;
+}
+
+
+/* ------------  NEWSLETTER 2  ------------ */
+
+#newsletter-2{
+	background-image: url(../assets/white-pattern-bg.png);
+	background-position: fixed;
+}
