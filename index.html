@@ -13,7 +13,7 @@
 	<header id="header">
 
 			<nav class="top-header">
-					<img src="assets/logo.png" alt="Lisbon logo">
+					<img class="header__logo" src="assets/logo.png" alt="Lisbon logo">
 					<ul class="header__nav">
 						<li><a href="#">Home</a></li>
 						<li><a href="#about">About Us</a></li>
@@ -24,7 +24,7 @@
 						<li><a href="#venues">Venues</a></li>
 						<li><a href="#contact">Contact Us</a></li>
 					</ul>
-					<i class="fas fa-bars"></i>
+					<i class="hamburger fas fa-bars"></i>
 					<div class="search">
 						<i class="fas fa-search"></i>
 					</div>
@@ -35,7 +35,7 @@
 					<i class="fas fa-chevron-left"></i>
 				</div>
 				<div class="header_inner">
-				<i class="fas fa-microphone"></i>
+				<img src="assets/mic-icon.png" alt="Microphone icon">
 				<h4>20 - 22 June, 2018, New York City</h4>
 				<h1>World Digital Conference 2018 <br/>
 						Lead To Your Career
@@ -52,44 +52,45 @@
 	<!-- COUNTDOWN -->
 
 	<section id="countdown">
-		<div class="countdown__heading">
-			<p>26-29 August 2017, Berlin</p>
-			<h3 class="countdown__heading--main">
-				International Conference In 2017
-			</h3>
-		</div>
+		<div class="countdown__container wrapper">
+			<div class="countdown__heading">
+				<p>26-29 August 2017, Berlin</p>
+				<h3 class="countdown__heading--main">
+					International Conference In 2017
+				</h3>
+			</div>
 
-		<div class="countdown__clock">
-			<div class="days">
-				<div>1</div>
-				<div>4</div>
-				<div>8</div>
-				<p>Days</p>
+			<div class="countdown__clock">
+				<div class="days">
+					<div>1</div>
+					<div>4</div>
+					<div>8</div>
+					<p>Days</p>
+				</div>
+				<p>:</p>
+				<div class="hours">
+					<div>2</div>
+					<div>5</div>
+					<p>Hours</p>
+				</div>
+				<p>:</p>
+				<div class="minutes">
+					<div>2</div>
+					<div>8</div>
+					<p>Minutes</p>
+				</div>
+				<p>:</p>
+				<div class="seconds">
+					<div>1</div>
+					<div>5</div>
+					<p>Seconds</p>
+				</div>
 			</div>
-			<p>:</p>
-			<div class="hours">
-				<div>2</div>
-				<div>5</div>
-				<p>Hours</p>
-			</div>
-			<p>:</p>
-			<div class="minutes">
-				<div>2</div>
-				<div>8</div>
-				<p>Minutes</p>
-			</div>
-			<p>:</p>
-			<div class="seconds">
-				<div>1</div>
-				<div>5</div>
-				<p>Seconds</p>
+			<div class="buttons">
+				<a href="#" class="button">Buy Tickets</a>
+				<a href="#" class="button">See Details</a>
 			</div>
 		</div>
-		<div class="buttons">
-			<a href="#" class="button">Buy Tickets</a>
-			<a href="#" class="button">See Details</a>
-		</div>
-
 	</section>
 	<main>
 		<!-- ABOUT US -->
@@ -97,7 +98,7 @@
 			<h2 class="section__heading">
 				About The Event
 			</h2>
-			<p>Starting your own IT business and picking the right niche in less than 30 days.</p>
+			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
 			<div class="about__cards">
 				<div class="about__card">
 					<img src="assets/about-image-1.png" alt="Computer monitors at live event">
@@ -129,6 +130,8 @@
 			</div>
 		</section>
 
+		<!-- NEWSLETTER SIGNUP 1 -->
+
 		<section class="newsletter-1">
 			<h2 class="section__heading white">Join Our Event</h2>
 			<p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum aliquam, qui dolores doloribus cupiditate quia repellendus, voluptas molestia, explicabo dolor odio placeat quo eius ut consequuntur? Facere!</p>
@@ -144,7 +147,7 @@
 			<h2 class="section__heading">
 				About Our Speakers
 			</h2>
-			<p>Starting your own IT business and picking the right niche in less than 30 days.</p>
+			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
 			<div class="speaker__cards">
 
 				<div class="speaker__card">
@@ -242,7 +245,7 @@
 			<h2 class="section__heading">
 				About Our Speakers
 			</h2>
-			<p>Starting your own IT business and picking the right niche in less than 30 days.</p>
+			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
 
 			<div class="pricing__container">
 				<div class="pricing__card">
@@ -276,7 +279,231 @@
 				</div>
 			</div>
 
+			<div class="pricing__container">
+				<div class="pricing__card">
+					<h4 class="pricing__title">Premium Plan</h4>
+					<h5 class="pricing__subtitle">Standard Pricing Plan</h5>
+					<p class="pricing__price">$
+						<span class="price">
+							<span class="dollarsign">$</span>90</span> / monthly</p>
+					<ul class="pricing__details">
+						<li>Clients Support 3 Event</li>
+						<li>Regular Seat &amp; Accomodationg</li>
+						<li>Free Coffee &amp; Lunch</li>
+						<li>Free Engtrance Materials</li>
+					</ul>
+					<a href="#" class="button">See Details</a>
+				</div>
+			</div>
 		</section>
+
+		<!-- EVENT SCHEDULE -->
+
+		<section id="schedule">
+			<h2 class="section__heading">
+				Latest News
+			</h2>
+			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
+
+			<div class="schedule__content">
+
+				<div class="schedule__buttons">
+					<div class="schedule__button--day1">
+						<span class="schedule__button--date">April 21</span>
+						<span class="schedule__button--day">Day 1</span>
+					</div>
+					<div class="schedule__button--day2">
+						<span class="schedule__button--date">April 22</span>
+						<span class="schedule__button--day">Day 2</span>
+					</div>
+					<div class="schedule__button--day3">
+						<span class="schedule__button--date">April 23</span>
+						<span class="schedule__button--day">Day 3</span>
+					</div>
+					<div class="schedule__button--day4">
+						<span class="schedule__button--date">April 24</span>
+						<span class="schedule__button--day">Day 4</span>
+					</div>
+				</div>
+
+				<div class="dottedlines">
+					<div class="dotted--top"></div>
+					<div class="dotted--bottom"></div>
+				</div>
+
+				<div class="schedule__speakers">
+
+					<div class="speaker speaker1">
+
+						<div class="speaker__image-container">
+							<img src="assets/speaker-1.png" alt="Speaker 1 headshot">
+						</div>
+
+						<div class="speaker__text">
+						<p class="speaker--name">Ashley Warner <span class="speaker--time">10AM - 12PM</span></p>
+						<p class="speaker--headline">Interfaces Holistically Predominate Extensible Testing Procedures</p>
+						<p class="speaker__blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae alias commodi mollitia nisi vero voluptatibus nobis ab ea in laborum.</p>
+					</div>
+
+				</div>
+
+				<div class="speaker speaker2">
+				
+					<div class="speaker__image-container">
+						<img src="assets/speaker-2.png" alt="Speaker 2 headshot">
+					</div>
+				
+					<div class="speaker__text">
+						<p class="speaker--name">Seth Rollins
+							<span class="speaker--time">1PM - 2PM</span>
+						</p>
+						<p class="speaker--headline">Welcome to UX Conference 2018 Speech</p>
+						<p class="speaker__blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae alias commodi mollitia nisi vero voluptatibus nobis ab ea
+							in laborum.</p>
+					</div>
+				
+				</div>
+
+				<div class="speaker speaker3">
+				
+					<div class="speaker__image-container">
+						<img src="assets/speaker-3.png" alt="Speaker 3 headshot">
+					</div>
+				
+					<div class="speaker__text">
+						<p class="speaker--name">Allison Fakename
+							<span class="speaker--time">4PM - 6PM</span>
+						</p>
+						<p class="speaker--headline">Open Your Business Around the World</p>
+						<p class="speaker__blurb">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae alias commodi mollitia nisi vero voluptatibus nobis ab ea
+							in laborum.</p>
+					</div>
+				
+				</div>
+
+			</div>
+
+
+		</section>
+
+
+		<!-- QUOTES -->
+
+		<section id="quotes">
+
+			<div class="quotes">
+				<aside class="quotes__images">
+					<div class="quote__image--container">
+						<img src="assets/speaker-1.png" alt="Ashley Warner headshot">
+					</div>
+					<div class="quote__image--container">
+						<img src="assets/speaker-2.png" alt="Ashley Warner headshot">
+					</div>
+					<div class="quote__image--container">
+						<img src="assets/speaker-3.png" alt="Ashley Warner headshot">
+					</div>
+					<div class="quote__image--container">
+						<img src="assets/speaker-4.png" alt="Ashley Warner headshot">
+					</div>
+				</aside>
+					<div class="quote__icon"><p class="quote__quoteicon">“</p></div>
+					<div class="quote">
+						<h3 class="quote--title"> Incase if you needed something fun and pointless</h3>
+						<blockquote class="quote--content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae eius nemo fuga natus dolores ex ducimus repudiandae consectetur
+						ipsa aliquam atque iure, molestias saepe expedita! Laborum aliquam hic est, illum, earum quia sunt maiores quis impedit id
+						possimus culpa autem!
+						</blockquote>
+						<p class="quote--credit"><span class="quote--author">Ashley Warner</span><span class="quote--job"> - Artist</span></p>
+					</div>
+			</div>
+		</section>
+
+		<!-- LATEST NEWS -->
+
+		<section id="news">
+			<h2 class="section__heading">
+				About Our Speakers
+			</h2>
+			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
+
+			<div class="news__mosaic">
+				<div class="news__image1">
+					<img src="assets/news-1.png" alt="Gathering at Lisbon event">
+				</div>
+				<div class="news__item1">
+					<h4 class="news__headline">River Stumble as lights</h4>
+				</div>
+
+			</div>
+
+		</section>
+
+		<!-- NEWSLETTER SIGNUP 2 -->
+
+		<section id="newsletter-2">
+			<h3 class="newsletter1__heading">Sign Up For Our Newsletter</h3>
+			<form action="">
+				<label for="email"></label>
+				<input type="email" id="email" name="email" placeholder="Your email address..">
+				<input type="submit" value="Subscribe">
+			</form>
+		</section>
+
+	<!-- FOOTER -->
+	<footer>
+		<div class="footer__contact">
+
+			<div class="address">
+				<div class="contact--icon">
+					<i class="fas fa-map-marker-alt"></i>
+				</div>
+				<div class="contact--text">
+					<p>184 Collins Street, West Victoria</p>
+					<p>United States, 90210</p>
+				</div>
+			</div>
+
+			<div class="address">
+				<div class="contact--icon">
+					<i class="fas fa-mobile-alt"></i>
+				</div>
+				<div class="contact--text">
+					<p>1(800)123-4567</p>
+					<p>1(800)123-4567</p>
+				</div>
+			</div>
+
+			<div class="address">
+				<div class="contact--icon">
+					<i class="far fa-envelope"></i>
+				</div>
+				<div class="contact--text">
+					<p>info@lisbon.com</p>
+					<p>support@lisbon.com</p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer__menu">
+			<img src="assets/logo.png" alt="Lisbon logo">
+			<ul class="footer__nav">
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li>
+					<a href="#speakers">Speakers</a>
+				</li>
+				<li><a href="#pages">Pages</a></li>
+				<li><a href="#sponsors">Sponsors</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#venues">Venues</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+			<p>Copyright &copy; <span class="fakelink">Lisbon</span> 2017</p>
+			<p>Responsive Template Conversion by <a class="fakelink" href="https://lauraloui.se">Laura-Louise</a> 2018</p>
+		</div>
+
+	</footer>
 
 	</main>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>

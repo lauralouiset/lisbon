@@ -6,6 +6,61 @@ $heading: 'Poppins', sans-serif;
 $paragraph: 'Raleway', sans-serif;
 
 
+a{
+	color: inherit;
+	text-decoration: none;
+	&:visited{
+		color: inherit;
+	}
+	&:hover{
+		color: $pink;
+	}
+}
+
 h1{
 	font-family: $heading;
+}
+
+/* ------------  HEADER  ------------ */
+
+#header{
+	color: white;
+}
+
+.header__nav li a{
+	text-transform: uppercase;
+	
+}
+
+/* ------------  ABOUT  ------------ */
+
+
+/* ------------  NEWSLETTERS  ------------ */
+
+#newsletter-1{
+	color: $white;
+}
+
+/* ------------  SPEAKERS  ------------ */
+
+
+/* ------------  PRICING  ------------ */
+
+
+/* ------------  SCHEDULE  ------------ */
+
+
+/* ------------  QUOTES  ------------ */
+
+#quotes{
+	color: $white;
+}
+
+/* ------------  NEWS  ------------ */
+
+
+/* ------------  FOOTER  ------------ */
+
+.fakelink{
+	color: $pink;
 }
