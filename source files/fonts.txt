@@ -1,0 +1,6 @@
+Fonts
+Raleway (Google Fonts)
+Poppins (Google Fonts)
+
+Icons: 
+Font Awesome (http://fontawesome.io/)

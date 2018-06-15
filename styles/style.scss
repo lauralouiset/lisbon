@@ -1,0 +1,35 @@
+/* =========================================
+"LISBON"
+A pixel-perfect, fully responsive one-page website
+converted from PSD
+============================================ */
+
+@import 'setup';
+@import 'var-mix';
+@import 'typography';
+
+@import 'components/header';
+
+
+/* ------------  BASE STYLES  ------------ */
+
+html{
+	font-size: 62.5%
+}
+
+img{
+	display:block;
+	max-width: 100%;
+}
+
+ul{
+	list-style: none;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+	&:visited{
+		color: inherit;
+	}
+}
