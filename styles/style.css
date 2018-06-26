@@ -145,7 +145,8 @@ img {
   max-width: 100%; }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  padding-left: 0px; }
 
 .wrapper {
   width: 75%;
@@ -217,10 +218,11 @@ p {
 
 .countdown__heading {
   font-size: 2.4rem;
-  margin: 10px 0; }
+  margin: 0 0 10px; }
 
 .countdown__date {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin: 0; }
 
 /* ------------  ABOUT  ------------ */
 .about__card {
@@ -302,6 +304,25 @@ p {
   border-bottom: none; }
 
 /* ------------  SCHEDULE  ------------ */
+.schedule__button--date {
+  color: #777777; }
+
+.schedule__button--day {
+  color: black; }
+
+.speaker--name {
+  font-size: 1.4rem;
+  color: #1b1b1b; }
+
+.speaker--time {
+  font-size: 1.4rem;
+  color: #777777; }
+
+.speaker--headline {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold; }
+
 /* ------------  QUOTES  ------------ */
 #quotes {
   color: white; }
@@ -364,7 +385,8 @@ UTILITIES
   box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03); }
 
 .countdown__buttons {
-  color: white; }
+  color: white;
+  margin: 10px; }
 
 .button, input[type=submit] {
   color: white;
@@ -391,6 +413,7 @@ HEADER
 header {
   background-image: url("../assets/main-image.png");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh; }
 
 .header__top {
@@ -435,11 +458,21 @@ header {
   align-items: center; }
 
 .header__inner {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  text-align: center; }
-  .header__inner img {
-    margin: 0 auto; }
+  text-align: center;
+  height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .arrow {
   background-color: rgba(255, 255, 255, 0.3);
@@ -453,13 +486,15 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 20px 0; }
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 .countdown__text {
-  margin: 10px 0; }
+  max-width: 250px; }
 
 .countdown__clock {
   display: -webkit-box;
@@ -475,7 +510,7 @@ header {
   border-radius: 5px;
   background-color: #1b1b1b;
   padding: 10px;
-  margin: 5px;
+  margin: 0 5px 5px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 1.6rem; }
@@ -503,6 +538,45 @@ EVENTS SCHEDULE
 ============================================ */
 #schedule {
   background-color: #fafafa; }
+
+.schedule__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto; }
+
+.schedule__days {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 25%; }
+  .schedule__days li {
+    padding: 10px; }
+    .schedule__days li p {
+      margin: 0; }
+
+.schedule__button {
+  border: 1px solid #e0e0e0; }
+
+.dottedlines {
+  border: 1px solid #777777;
+  width: 10px;
+  height: 60%; }
+
+.speaker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.speaker__image-container img {
+  border-radius: 50%;
+  border: 10px solid #777777; }
 
 /* =========================================
 SPEAKERS 
@@ -587,6 +661,14 @@ QUOTES SECTION
 ============================================ */
 #quotes {
   background-color: #463f8c; }
+
+.quotes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.quote__image--container img {
+  border-radius: 50%; }
 
 /* =========================================
 NEWS

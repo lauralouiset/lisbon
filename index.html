@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600,800" rel="stylesheet">
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="icon" type="image/png" href="assets/favicon.png"/>
 	<title>Lisbon - Responsive PSD Conversion</title>
 </head>
 <body>
@@ -92,7 +93,10 @@
 			</div>
 		</div>
 	</section>
+
+	
 	<main>
+
 		<!-- ABOUT THE EVENT -->
 		<section id="about">
 			<h2 class="section__heading">
@@ -187,7 +191,7 @@
 							<img src="assets/speaker-2.png" alt="">
 						
 								<ul class="speaker--socials">
-									<li><a class="" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+									<li><a class="speaker--social--icon" href="#"><i class="fab fa-google-plus-g"></i></a></li>
 									<li>
 										<a class="speaker--social--icon" href="#"><i class="fab fa-twitter"></i></a>
 									</li>
@@ -197,14 +201,13 @@
 								</ul>
 						</div>
 
+					
+						<div class="speaker__card--bio">
+							<p class="speaker--bio--name">Seth Rollins</p>
+							<p class="speaker--bio--title">GM, The Boxtrap</p>
 						</div>
-
-							<div class="speaker__card--bio">
-								<p class="speaker--bio--name">Seth Rollins</p>
-								<p class="speaker--bio--title">GM, The Boxtrap</p>
-							</div>
 					</div>
-
+					
 					<div class="speaker__card shadow">
 						<div class="speaker__image">
 							<img src="assets/speaker-3.png" alt="">
@@ -226,16 +229,16 @@
 								</li>
 							</ul>
 						</div>
-
+						
 						<div class="speaker__card--bio">
 							<p class="speaker--bio--name">Darcy Owens</p>
 							<p class="speaker--bio--title">Producer, CSI:Cyber</p>
 						</div>
 					</div>
-		
+					
 					<div class="speaker__card shadow">
 						<img src="assets/speaker-4.png" alt="">
-					
+						
 						<div class="speaker__card--socials">
 							<ul class="speaker--socials">
 								<li>
@@ -255,21 +258,22 @@
 								</li>
 							</ul>
 						</div>
-							<div class="speaker__card--bio">
-								<p class="speaker--bio--name">Ashley Warner</p>
-								<p class="speaker--bio--title">CEO, Hatem Co.</p>
-							</div>
+						<div class="speaker__card--bio">
+							<p class="speaker--bio--name">Ashley Warner</p>
+							<p class="speaker--bio--title">CEO, Hatem Co.</p>
+						</div>
 					</div>
 					<div class="circlebuttons">
 						<div class="circlebutton"></div>
 						<div class="circlebutton"></div>
 						<div class="circlebutton"></div>
 					</div>
+				</div>
 			</div>
-		</section>
-
-		<!-- PRICING -->
-		<section id="pricing">
+			</section>
+			
+			<!-- PRICING -->
+			<section id="pricing">
 			<h2 class="section__heading">
 				Our Pricing
 			</h2>
@@ -308,8 +312,6 @@
 					<a href="#" class="pricing__button button">See Details</a>
 				</div>
 
-
-
 				<div class="pricing__card">
 					<h4 class="pricing__title">Premium Plan</h4>
 					<p class="pricing__subtitle">Standard Pricing Plan</p>
@@ -339,24 +341,24 @@
 
 			<div class="schedule__content">
 
-				<div class="schedule__buttons">
-					<div class="schedule__button--day1">
-						<span class="schedule__button--date">April 21</span>
-						<span class="schedule__button--day">Day 1</span>
-					</div>
-					<div class="schedule__button--day2">
-						<span class="schedule__button--date">April 22</span>
-						<span class="schedule__button--day">Day 2</span>
-					</div>
-					<div class="schedule__button--day3">
-						<span class="schedule__button--date">April 23</span>
-						<span class="schedule__button--day">Day 3</span>
-					</div>
-					<div class="schedule__button--day4">
-						<span class="schedule__button--date">April 24</span>
-						<span class="schedule__button--day">Day 4</span>
-					</div>
-				</div>
+				<ul class="schedule__days">
+					<li class="schedule__button">
+						<p class="schedule__button--date">April 21</p>
+						<p class="schedule__button--day">Day 1</p>
+					</li>
+					<li class="schedule__button">
+						<p class="schedule__button--date">April 22</p>
+						<p class="schedule__button--day">Day 2</p>
+					</li>
+					<li class="schedule__button">
+						<p class="schedule__button--date">April 23</p>
+						<p class="schedule__button--day">Day 3</p>
+					</li>
+					<li class="schedule__button">
+						<p class="schedule__button--date">April 24</p>
+						<p class="schedule__button--day">Day 4</p>
+					</li>
+				</ul>
 
 				<div class="dottedlines">
 					<div class="dotted--top"></div>
@@ -539,5 +541,6 @@
 
 	</main>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </body>
 </html>

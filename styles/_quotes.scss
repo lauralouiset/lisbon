@@ -5,3 +5,13 @@ QUOTES SECTION
 #quotes{
 	background-color: $purple;
 }
+
+.quotes{
+	display: flex;
+}
+
+.quote__image--container{
+	img{
+		border-radius: 50%;
+	}
+}

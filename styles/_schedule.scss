@@ -5,3 +5,43 @@ EVENTS SCHEDULE
 #schedule{
 	background-color: $grey;
 }
+
+.schedule__content{
+	display: flex;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.schedule__days{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	li{
+		padding: 10px;
+		p{
+			margin: 0;
+		}
+	}
+}
+
+.schedule__button{
+	border: 1px solid #e0e0e0;
+}
+
+.dottedlines{
+	border: 1px solid $medgrey;
+	width: 10px;
+	height: 60%;
+}
+
+
+.speaker{
+	display: flex;
+}
+
+.speaker__image-container img{
+	border-radius: 50%;
+	border: 10px solid $medgrey;
+	
+}
