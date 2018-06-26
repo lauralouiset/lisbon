@@ -8,17 +8,17 @@ EVENTS SCHEDULE
 
 .schedule__content{
 	display: flex;
+	align-items: center;
 	width: 80%;
 	margin: 0 auto;
 }
 
 .schedule__days{
-	background-color: white;
 	display: flex;
 	flex-direction: column;
-	width: 25%;
+	width: 35%;
 	li{
-		padding: 10px;
+		padding: 15px 30px;
 		p{
 			margin: 0;
 		}
@@ -27,21 +27,40 @@ EVENTS SCHEDULE
 
 .schedule__button{
 	border: 1px solid #e0e0e0;
+	background-color: white;
 }
 
 .dottedlines{
-	border: 1px solid $medgrey;
-	width: 10px;
-	height: 60%;
+	border-style: dashed;
+	border-color: $medgrey;
+	border-width: 1px 0px 1px 1px;
+	width: 50px;
+	height: 300px;
+	margin: 0 30px;
 }
 
+.dotted--top{
+	border-bottom: 1px dashed $medgrey;
+	height: 50%;
+}
 
 .speaker{
 	display: flex;
 }
 
-.speaker__image-container img{
-	border-radius: 50%;
-	border: 10px solid $medgrey;
-	
+.speaker__image-container{
+	display: flex;
+	align-items: center;
+	width: 20%;
+
+	img{
+		border-radius: 50%;
+		border: 7px solid #ececec;
+		height: 100px;
+		width: 100px;
+	}
+}
+
+.speaker__text{
+	margin: 10px;
 }

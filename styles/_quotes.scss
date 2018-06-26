@@ -8,10 +8,32 @@ QUOTES SECTION
 
 .quotes{
 	display: flex;
+	justify-content: flex-start;
+
+}
+
+.quotes__images{
+	width: 10%;
 }
 
 .quote__image--container{
 	img{
+		border: 5px solid transparent;
 		border-radius: 50%;
+		margin-bottom: 35px;
+		transition: border 0.3s ease-in-out;
+		&:hover{
+			border: 5px solid $white;
+			box-shadow: 0 0 1rem $grey;
+		}
+	
 	}
+}
+
+.quote{
+	width: 50%;
+}
+
+.quote__icon{
+	margin: -35px 40px 0;
 }

@@ -154,7 +154,7 @@ ul {
   margin: 0 auto; }
 
 section {
-  padding: 30px 0 50px; }
+  padding: 80px 0; }
 
 /* =========================================
 VARIABLES & MIXINS
@@ -185,7 +185,8 @@ p {
   text-transform: uppercase;
   text-align: center;
   font-weight: 800;
-  font-size: 3.6rem; }
+  font-size: 3.6rem;
+  margin-top: 0; }
 
 .section__subheading {
   font-style: italic;
@@ -305,27 +306,66 @@ p {
 
 /* ------------  SCHEDULE  ------------ */
 .schedule__button--date {
-  color: #777777; }
+  color: #777777;
+  font-size: 1.3rem; }
 
 .schedule__button--day {
-  color: black; }
+  color: black;
+  font-size: 1.8rem; }
 
 .speaker--name {
   font-size: 1.4rem;
-  color: #1b1b1b; }
+  color: #1b1b1b;
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
 
 .speaker--time {
   font-size: 1.4rem;
-  color: #777777; }
+  color: #777777;
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "Raleway", sans-serif; }
 
 .speaker--headline {
   font-family: "Raleway", sans-serif;
   font-size: 1.8rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 5px 0;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.3; }
+
+.speaker__blurb {
+  margin: 0;
+  font-family: "Raleway", sans-serif; }
 
 /* ------------  QUOTES  ------------ */
 #quotes {
-  color: white; }
+  color: #fafafa; }
+
+.quote__quoteicon {
+  font-size: 11rem;
+  font-family: 'PlantangenetCherokee';
+  margin-top: 0; }
+
+.quote--title {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  line-height: 4.6rem;
+  margin-top: 0; }
+
+.quote--content,
+.quote--job {
+  font-family: "Poppins", sans-serif;
+  color: #bfb9f6;
+  font-size: 1.7rem;
+  font-style: italic;
+  line-height: 2.8rem;
+  margin: 0; }
+
+.quote--author {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600; }
 
 /* ------------  NEWS  ------------ */
 /* ------------  FOOTER  ------------ */
@@ -376,6 +416,8 @@ p {
 
 .footer__nav {
   color: #777777; }
+  .footer__nav li {
+    font-size: 1.4rem; }
 
 /* =========================================
 UTILITIES
@@ -391,14 +433,19 @@ UTILITIES
 .button, input[type=submit] {
   color: white;
   border-radius: 5px;
-  min-width: 214px;
+  min-width: 150px;
   background-color: #ed1e79;
   padding: 10px;
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   font-weight: 600; }
+
+.button-sib {
+  background-color: #463f8c;
+  margin-left: 10px; }
 
 .section__subheading::after {
   content: "";
@@ -414,7 +461,7 @@ header {
   background-image: url("../assets/main-image.png");
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh; }
+  height: 80vh; }
 
 .header__top {
   display: -webkit-box;
@@ -423,7 +470,7 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 2px double #777777;
+  border-bottom: 4px double #777777;
   padding: 5px; }
 
 .header__nav, .footer__nav {
@@ -459,7 +506,7 @@ header {
 
 .header__inner {
   text-align: center;
-  height: calc(100vh - 80px);
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,12 +533,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .countdown__text {
   max-width: 250px; }
@@ -533,6 +577,14 @@ ABOUT
 .about__card--text {
   padding: 10px; }
 
+.section__subheading::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 5rem;
+  border-bottom: 1px solid #ed1e79;
+  margin: 3rem auto 4rem; }
+
 /* =========================================
 EVENTS SCHEDULE
 ============================================ */
@@ -543,11 +595,13 @@ EVENTS SCHEDULE
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 80%;
   margin: 0 auto; }
 
 .schedule__days {
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,32 +609,62 @@ EVENTS SCHEDULE
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  width: 25%; }
+  width: 35%; }
   .schedule__days li {
-    padding: 10px; }
+    padding: 15px 30px; }
     .schedule__days li p {
       margin: 0; }
 
 .schedule__button {
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #e0e0e0;
+  background-color: white; }
 
 .dottedlines {
-  border: 1px solid #777777;
-  width: 10px;
-  height: 60%; }
+  border-style: dashed;
+  border-color: #777777;
+  border-width: 1px 0px 1px 1px;
+  width: 50px;
+  height: 300px;
+  margin: 0 30px; }
+
+.dotted--top {
+  border-bottom: 1px dashed #777777;
+  height: 50%; }
 
 .speaker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.speaker__image-container img {
-  border-radius: 50%;
-  border: 10px solid #777777; }
+.speaker__image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20%; }
+  .speaker__image-container img {
+    border-radius: 50%;
+    border: 7px solid #ececec;
+    height: 100px;
+    width: 100px; }
+
+.speaker__text {
+  margin: 10px; }
 
 /* =========================================
 SPEAKERS 
 ============================================ */
+#speakers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 .speaker__cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,27 +674,43 @@ SPEAKERS
   width: calc(25% - 20px);
   margin: 20px; }
 
+.speaker__card:hover .speaker__card--bio {
+  background-color: #463f8c;
+  color: white; }
+
 .speaker__image {
   position: relative;
   overflow: hidden; }
-
-.speaker--social--icon {
-  position: absolute;
-  top: -40px; }
 
 .speaker--socials {
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
-
-.speaker__card:hover .speaker__card--bio {
-  background-color: #463f8c;
-  color: white; }
+  display: flex;
+  position: absolute; }
 
 .speaker__card--bio {
   text-align: center;
   padding: 20px; }
+
+.circlebuttons {
+  margin: 10px auto;
+  display: inline-block; }
+
+.circlebutton {
+  width: 10px;
+  height: 10px;
+  background-color: #463f8c;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  .circlebutton:hover {
+    outline: 1px solid #ed1e79;
+    outline-offset: 3px;
+    -moz-outline-radius: 100%; }
 
 /* =========================================
 OUR PRICING
@@ -665,10 +765,31 @@ QUOTES SECTION
 .quotes {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.quotes__images {
+  width: 10%; }
 
 .quote__image--container img {
-  border-radius: 50%; }
+  border: 5px solid transparent;
+  border-radius: 50%;
+  margin-bottom: 35px;
+  -webkit-transition: border 0.3s ease-in-out;
+  -o-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out; }
+  .quote__image--container img:hover {
+    border: 5px solid white;
+    -webkit-box-shadow: 0 0 1rem #fafafa;
+    box-shadow: 0 0 1rem #fafafa; }
+
+.quote {
+  width: 50%; }
+
+.quote__icon {
+  margin: -35px 40px 0; }
 
 /* =========================================
 NEWS

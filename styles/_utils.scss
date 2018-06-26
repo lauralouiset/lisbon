@@ -14,14 +14,20 @@ UTILITIES
 .button{
 	color: white;
 	border-radius: 5px;
-	min-width: 214px;
+	min-width: 150px;
 	background-color: $pink;
 	padding: 10px;
+	display: inline-block;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: $heading;
 	font-size: 1.6rem;
 	font-weight: 600;
+}
+
+.button-sib{
+	background-color: $purple;
+	margin-left: 10px;
 }
 
 .section__subheading::after{

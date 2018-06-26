@@ -2,8 +2,15 @@
 SPEAKERS 
 ============================================ */
 
+#speakers{
+	display: flex;
+	flex-direction: column;
+
+}
+
 .speaker__cards{
 	display: flex;
+
 }
 
 .speaker__card{
@@ -11,28 +18,49 @@ SPEAKERS
 	margin: 20px;
 }
 
-.speaker__image{
-	position: relative;
-	overflow: hidden;
-}
-
-.speaker--social--icon{
-	position: absolute;
-	top: -40px;
-
-}
-
-.speaker--socials{
-		color: white;
-		display: flex;
-}
-
 .speaker__card:hover .speaker__card--bio{
 	background-color: $purple;
 	color: white;
 }
 
+.speaker__image{
+	position: relative;
+	overflow: hidden;
+}
+
+.speaker--socials{
+		color: white;
+		display: flex;
+		position: absolute;
+}
+
+.speaker--social--icon{
+
+}
+
+
 .speaker__card--bio{
 	text-align: center;
 		padding: 20px;
+}
+
+.circlebuttons{
+	margin: 10px auto;
+	display: inline-block;
+}
+
+.circlebutton{
+	width: 10px;
+	height: 10px;
+	background-color: $purple;
+	margin: 10px;
+	display: inline-block;
+	border-radius: 50%;
+	transition: all .3s ease-in-out;
+	&:hover{
+		outline: 1px solid $pink;
+		outline-offset: 3px;
+		-moz-outline-radius: 100%;
+	}
+
 }
