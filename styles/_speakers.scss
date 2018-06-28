@@ -10,18 +10,36 @@ SPEAKERS
 
 .speaker__cards{
 	display: flex;
+	flex-flow: row nowrap;
 
+	@media(max-width: 800px){
+		flex-flow: row wrap;
+		justify-content: center;
+	}
 }
 
 .speaker__card{
 	width: calc(25% - 20px);
 	margin: 20px;
+	transition: all .3s ease-in-out;
+
+	img{
+		width: 100%;
+	}
+	&:hover{
+		transform: scale(1.03);
+	}
+
+	@media (max-width: 800px){
+		width: 40%;
+	}
+
+	@media (max-width: 450px){
+		width: 70%;
+	}
 }
 
-.speaker__card:hover .speaker__card--bio{
-	background-color: $purple;
-	color: white;
-}
+
 
 .speaker__image{
 	position: relative;
@@ -29,20 +47,95 @@ SPEAKERS
 }
 
 .speaker--socials{
-		color: white;
-		display: flex;
-		position: absolute;
+	color: white;
+	display: flex;
+	position: absolute;
+	position: absolute;
+	bottom: 10px;
+	right: calc(50% - 62px);
+
+	@media (max-width: 450px){
+	right: calc(50% - 108px);
+	}
+
+		li{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: white;
+			width: 30px;
+			height: 30px;
+			margin: 5px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 50%;
+			font-size: 1.5rem;
+			position: relative;
+			bottom: -70px;
+			transition: all .3s ease-in-out;
+			&:hover{
+				background-color: $pink;
+			}
+
+		@media (max-width: 800px){
+			bottom: 0px;
+		}
+
+		@media (max-width: 450px){
+		margin: 5px 15px;
+		height: 40px;
+		width: 40px;
+		}
+
+	}
 }
-
-.speaker--social--icon{
-
-}
-
 
 .speaker__card--bio{
 	text-align: center;
-		padding: 20px;
+	padding: 20px;
+	transition: all .3s ease-in-out;
 }
+
+.speaker__card:hover .speaker__card--bio{
+	background-color: $purple;
+	color: white;
+}
+
+@keyframes socials{
+	0% {
+		bottom: -70px;
+	}
+
+	50%{
+		bottom: -35px;
+	}
+
+	100%{
+		bottom: 0px;
+	}
+}
+
+.speaker__card:hover .speaker--socials li{
+	animation-name: socials;
+	animation-duration: .3s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+
+	@media (max-width: 800px){
+	animation: none;
+	}
+}
+
+.social-icon-twitter{
+	animation-delay: .5s;
+}
+
+.social-icon-fb{
+	animation-delay: 1s;
+}
+
+
+
 
 .circlebuttons{
 	margin: 10px auto;
@@ -50,14 +143,15 @@ SPEAKERS
 }
 
 .circlebutton{
-	width: 10px;
-	height: 10px;
+	width: 15px;
+	height: 15px;
 	background-color: $purple;
-	margin: 10px;
+	margin: 7px;
 	display: inline-block;
 	border-radius: 50%;
-	transition: all .3s ease-in-out;
+	transition: all .2s ease-in-out;
 	&:hover{
+		background-color: $pink;
 		outline: 1px solid $pink;
 		outline-offset: 3px;
 		-moz-outline-radius: 100%;

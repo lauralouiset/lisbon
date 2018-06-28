@@ -13,7 +13,8 @@ box-sizing: border-box;
 
 
 html{
-	font-size: 62.5%
+	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 img{
@@ -28,11 +29,17 @@ ul{
 
 .wrapper{
 	width: 75%;
-	min-width: 900px;
 	margin: 0 auto;
+	@include mq(xl){
+		width: 90%;
+	}
 }
 
 section{
-	padding: 80px 0;
+	padding: 90px 0;
+
+	@include mq(med){
+	padding: 50px 0;
+	}
 }
 

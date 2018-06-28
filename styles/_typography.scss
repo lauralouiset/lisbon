@@ -9,15 +9,20 @@ $paragraph: 'Poppins', sans-serif;
 a{
 	color: inherit;
 	text-decoration: none;
-	&:hover{
-		color: $pink;
-	}
 }
 
 h1{
 	font-family: $heading;
 	text-transform: uppercase;
 	font-size: 4.4rem;
+
+		@media(max-width: 815px){
+		margin-top: 0;
+	}
+
+		@include mq(med){
+		font-size: 3rem;
+	}
 }
 
 p{
@@ -33,6 +38,13 @@ p{
 	font-weight: 800;
 	font-size: 3.6rem;
 	margin-top: 0;
+
+
+
+		@include mq(med){
+		width: 80%;
+		margin: 0 auto;
+	}
 }
 
 .section__subheading{
@@ -40,6 +52,11 @@ p{
 	font-family: $paragraph;
 	text-align: center;
 	color: $medgrey;
+
+	@include mq(med){
+		width: 80%;
+		margin: 10px auto 0;
+	}
 }
 
 
@@ -52,7 +69,11 @@ p{
 .header__nav li{
 	text-transform: uppercase;
 	font-family: $heading;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
+	margin-bottom: 5px;
+	&:hover{
+		color: $pink;
+	}
 }
 
 .title__date{
@@ -61,6 +82,13 @@ p{
 	font-size: 2.2rem;
 	font-weight: 400;
 	color: white;
+
+	@media(max-width: 815px){
+		margin: 5px;
+	}
+	@include mq(med){
+		font-size: 1.8rem;
+	}
 }
 
 .countdown__heading,
@@ -77,17 +105,29 @@ p{
 }
 
 .countdown__date{
-		font-size: 1.4rem;
-		margin: 0;
+	font-size: 1.4rem;
+	margin: 0;
 }
 	
-
+.days,
+.hours,
+.minutes,
+.seconds{
+	p{
+		margin-left: 3px;
+		margin-top: 0px;
+		font-size: 1.6rem;
+		color: #777;
+		text-transform: uppercase;
+	}
+}
 
 /* ------------  ABOUT  ------------ */
 
 .about__card{
 	text-align: left;
 }
+
 .about__card--heading{
 	text-transform: uppercase;
 	font-family: $heading;
@@ -120,12 +160,17 @@ p{
 	font-weight: 600;
 	color: $black;
 	font-family: $heading;
+	margin-top: 0;
 }
 
 /* ------------  SPEAKERS  ------------ */
 
 .speaker__card--bio{
 	color: $medgrey;
+}
+
+.speaker--bio--name{
+	color: $black;
 }
 
 /* ------------  PRICING  ------------ */
@@ -146,27 +191,42 @@ p{
 	font-family: $paragraph;
 	font-size: 2rem;
 	margin-top: 0;
+	font-weight: 400;
+		@include mq(med){
+		font-size: 2.4rem;
+	}
 }
 
 .pricing__subtitle{
 	font-family: $paragraph;
 	font-size: 1.4rem;
 	color: $medgrey;
+		@include mq(med){
+		font-size: 1.6rem;
+	}
 }
 
 .pricing__price{
 	font-family: $paragraph;
 	color: $medgrey;
+
 }
 
 .dollarsign{
 	position:relative;
 	top: -10px;
+		@include mq(med){
+		font-size: 2rem;
+	}
 }
 
 .price{
 	color: black;
 	font-size: 2.4rem;
+
+	@include mq(med){
+		font-size: 4rem;
+	}
 }
 
 .pricing__details li{
@@ -184,6 +244,8 @@ p{
 
 /* ------------  SCHEDULE  ------------ */
 
+
+
 .schedule__button--date{
 	color: $medgrey;
 	font-size: 1.3rem;
@@ -192,6 +254,11 @@ p{
 .schedule__button--day{
 	color: black;
 	font-size: 1.8rem;
+}
+
+.schedule__button:hover .schedule__button--date,
+.schedule__button:hover .schedule__button--day{
+	color: white;
 }
 
 .speaker--name{
@@ -263,7 +330,26 @@ p{
 
 /* ------------  NEWS  ------------ */
 
+.news--title{
+font-family: $heading;
+font-size: 2rem;
+font-weight: 600;
+margin-top: 0;
+}
 
+.news--author{
+	font-size: 1.2rem;
+	color: #ababab;
+}
+
+
+.link--text{
+	font-family: $heading;
+	font-size: 18px;
+	line-height: 26px;
+	margin-top: 10px;
+	display: inline-block;
+	}
 /* ------------  FOOTER  ------------ */
 
 .footer__contact{
@@ -273,28 +359,12 @@ p{
 	justify-content: center;
 }
 
-.contact__item{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-right:  1px solid rgba(255, 255, 255, 0.2);
-	padding: 0 20px;
-	margin: 0 20px;
-}
 
-.contact__item:last-child{
-	border:none;
-}
-
-.contact--icon{
-	font-size: 1.6rem;
-	background: rgba(255, 255, 255, 0.2);
-	padding: 5px;
-	border-radius: 50%;
-	height: 30px;
-	width:30px;
-	text-align: center;
-	margin: 0 10px;
+.contact--text{
+	color: $medgrey;
+	p{
+		margin: 5px;
+	}
 }
 
 .footer__menu{

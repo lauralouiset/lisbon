@@ -11,6 +11,10 @@ EVENTS SCHEDULE
 	align-items: center;
 	width: 80%;
 	margin: 0 auto;
+
+	@media(max-width: 800px){
+		flex-direction: column;
+	}
 }
 
 .schedule__days{
@@ -22,12 +26,34 @@ EVENTS SCHEDULE
 		p{
 			margin: 0;
 		}
+		@media(max-width: 800px){
+			padding: 15px;
+		}
+		@media(max-width: 630px){
+			padding: 10px;
+		}
+	}
+		@media(max-width: 800px){
+		flex-direction: row;
+		width: 90%;
+		justify-content: center;
+	}
+	@media(max-width: 630px){
+		flex-direction: column;
+		width: 100%;
 	}
 }
 
 .schedule__button{
 	border: 1px solid #e0e0e0;
 	background-color: white;
+	transition: all .2s ease-in-out;
+	min-width: 150px;
+	&:hover{
+		background-color: $pink;
+		transform: scale(1.03);
+	}
+
 }
 
 .dottedlines{
@@ -37,6 +63,10 @@ EVENTS SCHEDULE
 	width: 50px;
 	height: 300px;
 	margin: 0 30px;
+
+	@include mq(lg){
+		display:none;
+	}
 }
 
 .dotted--top{
@@ -46,18 +76,36 @@ EVENTS SCHEDULE
 
 .speaker{
 	display: flex;
+	flex-grow: 3;
+		@media(max-width: 800px){
+		border: 1px dashed #ececec;
+		margin-top: 15px;
+		padding: 10px;
+	}
+
+	&:hover .speaker__image-container{
+		transform: scale(1.1);
+	}
+
+	@media(max-width: 630px){
+	flex-direction: column;
+	}
 }
 
 .speaker__image-container{
-	display: flex;
-	align-items: center;
-	width: 20%;
+	width: 15%;
+	margin-top: 15px;
+	margin-right: 15px;
+	transition: all .3s ease-in-out;
 
 	img{
 		border-radius: 50%;
 		border: 7px solid #ececec;
-		height: 100px;
-		width: 100px;
+		width: 100%;
+		min-width: 90px;
+	}
+		@include mq(lg){
+		margin: 15px;
 	}
 }
 

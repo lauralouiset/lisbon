@@ -5,6 +5,10 @@ ABOUT
 .about__cards{
 	display: flex;
 	margin: 0 auto;
+
+		@include mq(med){
+		flex-direction: column;
+	}
 }
 
 .about__card{
@@ -14,17 +18,27 @@ ABOUT
 	img{
 		width: 100%;
 	}
+
+@include mq(med){
+	width: 80%;
+	min-width: 300px;
+	margin: 20px auto;
+}
+
 }
 
 .about__card--text{
 	padding: 10px;
+	@include mq(med){
+		padding: 20px;
+	}
 }
 
 .section__subheading::after{
 	content: "";
 	display: block;
 	height: 1px;
-	width: 5rem;
+	width: 50px;
 	border-bottom: 1px solid $pink;
 	margin: 3rem auto 4rem;
 }

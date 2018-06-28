@@ -15,7 +15,7 @@
 
 			<nav class="header__top wrapper">
 					<img class="header__logo" src="assets/logo.png" alt="Lisbon logo">
-					<ul class="header__nav">
+					<ul class="header__nav hamburger__nav">
 						<li><a href="#">Home</a></li>
 						<li><a href="#about">About Us</a></li>
 						<li><a href="#speakers">Speakers</a></li>
@@ -54,6 +54,7 @@
 
 	<section id="countdown">
 		<div class="countdown__container wrapper">
+			
 			<div class="countdown__text">
 				<p class="countdown__date">26-29 August 2017, Berlin</p>
 				<h3 class="countdown__heading">
@@ -63,35 +64,54 @@
 
 			<div class="countdown__clock">
 				<div class="days">
-					<div>1</div>
-					<div>4</div>
-					<div>8</div>
+					<div class="nums">
+						<div class="number">1</div>
+						<div class="number">4</div>
+						<div class="number">8</div>
+					</div>
 					<p>Days</p>
 				</div>
-				<p>:</p>
+
+
+				<p class="colon">:</p>
+
 				<div class="hours">
-					<div>2</div>
-					<div>5</div>
+					<div class="nums">
+						<div class="number">2</div>
+						<div class="number">5</div>
+					</div>
 					<p>Hours</p>
 				</div>
-				<p>:</p>
+
+				<p class="colon">:</p>
+
 				<div class="minutes">
-					<div>2</div>
-					<div>8</div>
+					<div class="nums">
+						<div class="number">2</div>
+						<div class="number">8</div>
+					</div>
 					<p>Minutes</p>
 				</div>
-				<p>:</p>
+
+				<p class="colon">:</p>
+
 				<div class="seconds">
-					<div>1</div>
-					<div>5</div>
+					<div class="nums">
+						<div class="number">1</div>
+						<div class="number">5</div>
+					</div>
 					<p>Seconds</p>
 				</div>
+			
 			</div>
-			<div class="countdown__buttons">
-				<a href="#" class="button">Buy Tickets</a>
-				<a href="#" class="button button-sib">See Details</a>
-			</div>
-		</div>
+
+				<div class="countdown__buttons">
+					<a href="#" class="button">Buy Tickets</a>
+					<a href="#" class="button button-sib">See Details</a>
+				</div>
+
+
+
 	</section>
 
 	<main>
@@ -192,12 +212,19 @@
 						<img src="assets/speaker-2.png" alt="">
 					
 							<ul class="speaker--socials">
-								<li><a class="speaker--social--icon" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li>
+
 								<li>
 									<a class="speaker--social--icon" href="#"><i class="fab fa-twitter"></i></a>
 								</li>
-								<li class="speaker--social--icon">
-									<a href="#"><i class="fab fa-facebook-f"></i></a>
+								<li>
+									<a class="speaker--social--icon" href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
 								</li>
 							</ul>
 					</div>
@@ -246,17 +273,19 @@
 				
 						<ul class="speaker--socials">
 							<li>
-								<a class="speaker--social--icon" href="#">
+								<a class="speaker--social--icon " href="#">
 									<i class="fab fa-google-plus-g"></i>
 								</a>
 							</li>
+
 							<li>
-								<a class="speaker--social--icon" href="#">
+								<a class="speaker--social--icon social-icon-twitter" href="#">
 									<i class="fab fa-twitter"></i>
 								</a>
 							</li>
-							<li class="speaker--social--icon">
-								<a href="#">
+
+							<li>
+								<a class="speaker--social--icon social-icon-fb" href="#">
 									<i class="fab fa-facebook-f"></i>
 								</a>
 							</li>
@@ -306,7 +335,7 @@
 				</div>
 
 
-				<div class="pricing__card">
+				<div class="pricing__card optimal">
 					<div class="bestplan">Best Choice</div>
 					<h4 class="pricing__title">Optimal Plan</h4>
 					<p class="pricing__subtitle">Standard Pricing Plan</p>
@@ -471,12 +500,48 @@
 			<p class="section__subheading">Starting your own IT business and picking the right niche in less than 30 days.</p>
 
 			<div class="news__mosaic wrapper">
-				<div class="news__image1">
-					<img src="assets/news-1.png" alt="Gathering at Lisbon event">
-				</div>
-				<div class="news__item1">
-					<h4 class="news__headline">River Stumble as lights</h4>
-				</div>
+						<div class="col-3">
+							<div class="news__container news__container--1">
+								<img src="assets/news-1.png" alt="Gathering of people, woman speaking">
+								<div class="news--text">
+									<h4 class="news--title">River Stumble as Lights</h4>
+									<p class="news--author">By David Warner on 25 Apr 2017</p>
+									<p>Interfaces holistically predominate elitslate extensible testing procedures.</p>
+									<a href="#" class="button button-news">Read More</a>
+								</div>
+							</div>
+							<div class="news__container news__container--2">
+								<img src="assets/news-2.png" alt="Man admiring poster on wall">
+								<div class="news--text">
+									<h4 class="news--title">How to Build Your Event</h4>
+									<p class="news--author">By Seth Rollins on 23 Apr 2017</p>
+									<p>Interfaces holistically predominate elitslate extensible testing procedures.</p>
+									<a href="#" class="button button-news">Read More</a>
+								</div>
+							</div>
+
+							<div class="news__container news__container--3">
+								<div class="news--text">
+									<h4 class="news--title">The Standard Chunk of Fun</h4>
+									<p class="news--author">By Adam Rose on 17 Apr 2017</p>
+									<p>Interfaces holistically predominate elitslate extensible testing procedures.</p>
+									<a href="#" class="button button-news">Read More</a>
+								</div>
+							</div>
+
+							<div class="news__container news__container--fb">
+								<div class="news--text">
+									<div class="news--link">
+										<a href="http://www.facebook.com">
+											<i class="fas fa-link"></i>
+										</a>
+										<a class="link--text" href="http://www.facebook.com">http://www.facebook.com</a>
+									</div>
+								</div>
+								<a href="#" class="button button-news button-fb">Read More</a>
+							</div>
+
+						</div>
 
 			</div>
 
@@ -552,5 +617,6 @@
 	</main>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="scripts/scripts.js"></script>
 </body>
 </html>

@@ -4,7 +4,6 @@ OUR PRICING
 
 #pricing{
 	background-image: url(../assets/pricing-image.png);
-	background-size: contain;
 	background-repeat: no-repeat;
 }
 
@@ -12,6 +11,13 @@ OUR PRICING
 	display:flex;
 	padding: 30px;
 	background-color: white;
+
+		@include mq(med){
+		flex-direction: column;
+		padding: 10px 0;
+		width: 70%;
+	}
+
 }
 
 .pricing__card{
@@ -22,10 +28,26 @@ OUR PRICING
 	margin-right: 30px;
 	border: 1px solid #ececec;
 	padding: 50px 30px;
+	transition: all .3s ease-in-out;
+	&:hover{
+		transform: scale(1.03);
+	}
+	@media(max-width: 820px){
+		padding: 30px 0px 60px;
+	}
+
+	@include mq(med){
+		width: 80%;
+		margin: 20px auto;
+	}
 }
 
 .pricing__card:last-child{
 	margin-right: 0;
+
+		@include mq(med){
+		margin: 20px auto;
+	}
 
 }
 
@@ -40,12 +62,31 @@ font-size: 1.4rem;
 right: -50px;
 transform: rotate(45deg);
 top: 25px;
+
+	@media(max-width: 820px){
+		display: none;
+	}
 }
 
-// .pricing__button{
-// 	margin-top: 20px;
-// }
 
 .pricing__details{
 	margin-bottom: 30px;
+
+	@media(max-width: 820px){
+		display: none;
+	}
+}
+
+.optimal{
+	@media(max-width: 820px){
+		box-shadow: 0px 2px 7px $pink;
+	}
+}
+
+.pricing__button{
+		@media(max-width: 820px){
+		position: absolute;
+		bottom: 20px;
+		right: calc(50% - 76px);
+	}
 }

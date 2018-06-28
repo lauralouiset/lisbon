@@ -6,30 +6,51 @@ header{
 	background-image: url("../assets/main-image.png");
 	background-size: cover;
 	background-attachment: fixed;
-	height: 80vh;
+	height: 100vh;
+	max-height: 800px;
 }
 
 .header__top{
 	display: flex;
 	align-items: center;
 	border-bottom: 4px double $medgrey;
-	padding: 5px;
+	padding: 10px;
 }
 
 .header__nav{
 	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+
   li a{
 		padding: 5px;
-		margin: 5px;
+		margin: 7px;
+
+		@include mq(lg){
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.hamburger__nav{
+		@include mq(sm){
+		display:none;
 	}
 }
 
 .header__logo{
 	margin-right: auto;
+	max-width: 100px;
 }
 
 .hamburger{
+	font-size: 2.2rem;
+	margin-right: 15px;
 	display: none;
+
+	@include mq(sm){
+		display:block;
+	}
 }
 
 .search{
@@ -49,15 +70,15 @@ header{
 	text-align: center;
 	height: 60vh;
 	display: flex;
+	margin: 20px 0;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .arrow{
-background-color: rgba(255, 255, 255, 0.3);
-padding: 25px 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 25px 10px;
 }
 
 
@@ -65,10 +86,12 @@ padding: 25px 10px;
 
 #countdown{
 	background-color: $grey;
+	padding: 40px 0;
 }
 
 .countdown__container{
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
 }
 
@@ -76,25 +99,44 @@ padding: 25px 10px;
 max-width: 250px;
 }
 
-
 .countdown__clock{
 	display: flex;
+	flex-flow: row wrap;
 }
 
-.days,
-.hours,
-.minutes,
-.seconds{
-	div{
+.nums{
+	display: flex;
+	flex-direction: row nowrap;
+}
+
+.number{
 		color: white;
-		display: inline-block;
-		border-radius: 5px;
+		border-radius: 3px;
 		background-color: $darkgrey;
-		padding: 10px;
-		margin: 0 5px 5px;
+		height: 45px;
+		width: 37px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 2px 5px;
 		font-family: $paragraph;
 		font-weight: 600;
 		font-size: 1.6rem;
+	}
 
+
+.colon{
+	margin: 8px 5px;
+}
+
+.countdown__buttons{
+	@media(max-width: 360px){
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		.button{
+			width: 160px;
+			margin: 10px;
+		}
 	}
 }

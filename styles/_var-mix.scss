@@ -16,3 +16,36 @@ $black: black;
 
 /* -------  RESPONSIVE MEDIA QUERIES  --------- */
 
+// Breakpoints 
+
+$xs: 440px;
+$sm: 600px;
+$med: 730px;
+$lg: 950px;
+$xl: 1150px;
+
+
+// Media Queries
+
+@mixin mq($break){
+    @if $break == 'sm'{
+		@media(max-width: $sm){
+		@content;
+			}
+  } 
+    @else if $break == 'med'{
+		@media(max-width: $med){
+		@content;
+	}
+    } 
+    @else if $break == 'lg'{
+		@media(max-width: $lg){
+		@content;
+			}
+    }
+    @else if $break == 'xl'{
+		@media(max-width: $xl){
+		@content;
+			}
+		}
+}
