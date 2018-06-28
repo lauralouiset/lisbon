@@ -28,24 +28,24 @@ $xl: 1150px;
 // Media Queries
 
 @mixin mq($break){
-    @if $break == 'sm'{
-		@media(max-width: $sm){
-		@content;
-			}
-  } 
-    @else if $break == 'med'{
-		@media(max-width: $med){
-		@content;
-	}
-    } 
-    @else if $break == 'lg'{
-		@media(max-width: $lg){
-		@content;
-			}
-    }
-    @else if $break == 'xl'{
-		@media(max-width: $xl){
-		@content;
-			}
+	@if $break == 'sm'{
+	@media(max-width: $sm){
+	@content;
 		}
+  } 
+	@else if $break == 'med'{
+	@media(max-width: $med){
+	@content;
+		}
+  } 
+	@else if $break == 'lg'{
+	@media(max-width: $lg){
+	@content;
+		}
+  }
+	@else if $break == 'xl'{
+	@media(max-width: $xl){
+	@content;
+		}
+	}
 }

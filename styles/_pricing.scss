@@ -12,12 +12,11 @@ OUR PRICING
 	padding: 30px;
 	background-color: white;
 
-		@include mq(med){
+	@include mq(med){
 		flex-direction: column;
 		padding: 10px 0;
 		width: 70%;
 	}
-
 }
 
 .pricing__card{
@@ -52,16 +51,16 @@ OUR PRICING
 }
 
 .bestplan{
-position: absolute;
-background: $purple;
-color: white;
-display: block;
-font-family: $heading;
-padding: 7px 50px;
-font-size: 1.4rem;
-right: -50px;
-transform: rotate(45deg);
-top: 25px;
+	position: absolute;
+	background: $purple;
+	color: white;
+	display: block;
+	font-family: $heading;
+	padding: 7px 50px;
+	font-size: 1.4rem;
+	right: -50px;
+	transform: rotate(45deg);
+	top: 25px;
 
 	@media(max-width: 820px){
 		display: none;
@@ -84,7 +83,7 @@ top: 25px;
 }
 
 .pricing__button{
-		@media(max-width: 820px){
+	@media(max-width: 820px){
 		position: absolute;
 		bottom: 20px;
 		right: calc(50% - 76px);

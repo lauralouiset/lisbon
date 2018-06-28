@@ -29,6 +29,7 @@ ABOUT
 
 .about__card--text{
 	padding: 10px;
+	
 	@include mq(med){
 		padding: 20px;
 	}

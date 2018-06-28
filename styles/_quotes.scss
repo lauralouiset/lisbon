@@ -21,7 +21,6 @@ QUOTES SECTION
 	@media(max-width: 800px){
 		flex-direction: column;
 	}
-
 }
 
 .quotes__images{
@@ -31,11 +30,11 @@ QUOTES SECTION
 		width: 80%;
 		margin: 0px auto 20px;
 		display: flex;
-		}
+	}
 
-		@media(max-width: 500px){
-			display: none;
-		}
+	@media(max-width: 500px){
+		display: none;
+	}
 }
 
 .quote__image--container{
@@ -47,7 +46,6 @@ QUOTES SECTION
 		@media(max-width: 800px){
 		width: 15%;
 		margin: 20px auto;
-
 		}
 
 	img{
@@ -58,7 +56,6 @@ QUOTES SECTION
 			border: 5px solid $white;
 			box-shadow: 0 0 1rem $grey;
 		}
-	
 	}
 }
 

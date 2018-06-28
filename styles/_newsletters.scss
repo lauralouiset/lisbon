@@ -19,7 +19,7 @@ input[type=submit]{
 	border: 2px solid transparent;
 	color: white;
 
-		@include mq(med){
+	@include mq(med){
 		width: 80%;
 	}
 }
@@ -29,11 +29,10 @@ input[type=email]{
 	font-family: $paragraph;
 	font-size: 1.4rem;
 
-		@include mq(med){
+	@include mq(med){
 		width: 80%;
 		text-align: center;
 		margin-bottom: 10px;
-
 	}
 }
 
@@ -45,8 +44,8 @@ input[type=email]{
 }
 
 .newsletter--text{
-		width: 80%;
-		margin: 14px auto;
+	width: 80%;
+	margin: 14px auto;
 }
 
 .newsletter-1__input{
@@ -72,7 +71,7 @@ input[type=email]{
 .newsletter-2__input{
 	background-color: white;
 
-		@include mq(med){
+	@include mq(med){
 		border-radius: 0px;
 	}
 }

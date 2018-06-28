@@ -5,6 +5,8 @@ TYPOGRAPHY
 $heading: 'Raleway', sans-serif;
 $paragraph: 'Poppins', sans-serif;
 
+/* ------------  STYLES  ------------ */
+
 
 a{
 	color: inherit;
@@ -16,12 +18,12 @@ h1{
 	text-transform: uppercase;
 	font-size: 4.4rem;
 
-		@media(max-width: 815px){
-		margin-top: 0;
+	@media(max-width: 815px){
+		margin-top: 10px;
 	}
 
-		@include mq(med){
-		font-size: 3rem;
+	@include mq(med){
+		font-size: 3.4rem;
 	}
 }
 
@@ -39,9 +41,7 @@ p{
 	font-size: 3.6rem;
 	margin-top: 0;
 
-
-
-		@include mq(med){
+	@include mq(med){
 		width: 80%;
 		margin: 0 auto;
 	}
@@ -59,7 +59,6 @@ p{
 	}
 }
 
-
 /* ------------  HEADER  ------------ */
 
 #header{
@@ -76,7 +75,7 @@ p{
 	}
 }
 
-.title__date{
+.header__date{
 	font-style: italic;
 	text-align: center;
 	font-size: 2.2rem;
@@ -84,7 +83,7 @@ p{
 	color: white;
 
 	@media(max-width: 815px){
-		margin: 5px;
+		margin: 30px 0 15px;
 	}
 	@include mq(med){
 		font-size: 1.8rem;
@@ -209,7 +208,6 @@ p{
 .pricing__price{
 	font-family: $paragraph;
 	color: $medgrey;
-
 }
 
 .dollarsign{
@@ -308,7 +306,6 @@ p{
 	font-size: 3rem;
 	line-height: 4.6rem;
 	margin-top: 0;
-
 }
 
 .quote--content,
@@ -325,16 +322,15 @@ p{
 	font-family: $heading;
 	font-size: 1.8rem;
 	font-weight: 600;
-
 }
 
 /* ------------  NEWS  ------------ */
 
 .news--title{
-font-family: $heading;
-font-size: 2rem;
-font-weight: 600;
-margin-top: 0;
+	font-family: $heading;
+	font-size: 2rem;
+	font-weight: 600;
+	margin-top: 0;
 }
 
 .news--author{
