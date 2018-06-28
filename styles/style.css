@@ -560,22 +560,13 @@ header {
     @media (max-width: 950px) {
       .header__nav li a, .footer__nav li a {
         margin-bottom: 10px; } }
-
-@media (max-width: 600px) {
-  .hamburger__nav {
-    display: none; } }
+  @media (max-width: 600px) {
+    .header__nav, .footer__nav {
+      display: none; } }
 
 .header__logo {
   margin-right: auto;
   max-width: 100px; }
-
-.hamburger {
-  font-size: 2.2rem;
-  margin-right: 15px;
-  display: none; }
-  @media (max-width: 600px) {
-    .hamburger {
-      display: block; } }
 
 .search {
   background-color: #ed1e79;
@@ -615,6 +606,38 @@ header {
 .arrow {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 25px 10px; }
+
+/* ------------  HAMBURGER MENU  ------------ */
+.hamburger {
+  font-size: 2.2rem;
+  margin-right: 15px;
+  display: none; }
+  @media (max-width: 600px) {
+    .hamburger {
+      display: block; } }
+
+@media (max-width: 600px) {
+  .hamburger__visible {
+    display: block;
+    position: absolute;
+    top: 67px;
+    right: 0;
+    width: 100vw;
+    height: calc(100vh - 75px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.95);
+    border: 1px solid black;
+    padding-top: 40px; }
+    .hamburger__visible li {
+      font-size: 2.4rem;
+      margin: 15px;
+      text-align: center; } }
 
 /* ------------  COUNTDOWN  ------------ */
 #countdown {
